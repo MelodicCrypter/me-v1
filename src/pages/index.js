@@ -26,7 +26,7 @@ const HomePage = props => {
                                 <a
                                     href="https://twitter.com"
                                     target="_blank"
-                                    className="button is-primary is-small sm-start"
+                                    className="button is-primary is-small has-tooltip-info has-tooltip-bottom sm-start"
                                     data-tooltip="Email"
                                 >
                                     <FontAwesomeIcon
@@ -38,8 +38,8 @@ const HomePage = props => {
                                 <a
                                     href="https://facebook.com"
                                     target="_blank"
-                                    title="LinkedIn Account"
-                                    className="button is-primary is-small"
+                                    className="button is-primary is-small has-tooltip-info has-tooltip-bottom"
+                                    data-tooltip="LinkedIn Account"
                                 >
                                     <FontAwesomeIcon
                                         icon={['fab', 'linkedin']}
@@ -50,8 +50,8 @@ const HomePage = props => {
                                 <a
                                     href="https://instagram.com"
                                     target="_blank"
-                                    title="GitHub Account"
-                                    className="button is-primary is-small"
+                                    className="button is-primary is-small has-tooltip-info has-tooltip-bottom"
+                                    data-tooltip="GitHub Account"
                                 >
                                     <FontAwesomeIcon
                                         icon={['fab', 'github']}
@@ -62,8 +62,8 @@ const HomePage = props => {
                                 <a
                                     href="https://facebook.com"
                                     target="_blank"
-                                    title="Medium Account"
-                                    className="button is-primary is-small"
+                                    className="button is-primary is-small has-tooltip-info has-tooltip-bottom"
+                                    data-tooltip="Medium Account"
                                 >
                                     <FontAwesomeIcon
                                         icon={['fab', 'medium']}
