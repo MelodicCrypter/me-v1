@@ -10,7 +10,7 @@ You may use and modify this software for personal use. You may not:
 
 
 
-Copyright (c) 2019 Taimoor Ahmad
+Copyright (c) 2020 Hugh Caluscusin
 
 
 
