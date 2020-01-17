@@ -16,12 +16,65 @@ const HomePage = props => {
                     <div className="container has-text-centered">
                         <div className="column is-6 is-offset-3">
                             <div className="me image">
-                                <img className="is-rounded" src="/image/me.jpg" />
+                                <img
+                                    className="is-rounded"
+                                    src="/image/me.jpg?nf_resize=smartcrop&w=400&h=400"
+                                />
                             </div>
                             <h1 className="title">Hugh Caluscusin</h1>
-                            <span className="aka is-size-6">
-                                &lt;a.k.a&gt; Melodic Crypter &lt;/a.k.a&gt;
-                            </span>
+                            <div className="social-media">
+                                <a
+                                    href="https://twitter.com"
+                                    target="_blank"
+                                    className="button is-primary is-small sm-start"
+                                    data-tooltip="Email"
+                                >
+                                    <FontAwesomeIcon
+                                        icon="envelope"
+                                        color="#87CD84"
+                                        className="iconn"
+                                    />
+                                </a>
+                                <a
+                                    href="https://facebook.com"
+                                    target="_blank"
+                                    title="LinkedIn Account"
+                                    className="button is-primary is-small"
+                                >
+                                    <FontAwesomeIcon
+                                        icon={['fab', 'linkedin']}
+                                        color="#87CD84"
+                                        className="iconn"
+                                    />
+                                </a>
+                                <a
+                                    href="https://instagram.com"
+                                    target="_blank"
+                                    title="GitHub Account"
+                                    className="button is-primary is-small"
+                                >
+                                    <FontAwesomeIcon
+                                        icon={['fab', 'github']}
+                                        color="#87CD84"
+                                        className="iconn"
+                                    />
+                                </a>
+                                <a
+                                    href="https://facebook.com"
+                                    target="_blank"
+                                    title="Medium Account"
+                                    className="button is-primary is-small"
+                                >
+                                    <FontAwesomeIcon
+                                        icon={['fab', 'medium']}
+                                        color="#87CD84"
+                                        className="iconn"
+                                    />
+                                </a>
+                            </div>
+                            {/*<span className="aka is-size-6">*/}
+                            {/*    &lt;a.k.a&gt; Melodic Crypter &lt;/a.k.a&gt;*/}
+                            {/*</span>*/}
                             <h2 className="subtitle">
                                 Hi! 👋 I'm a{' '}
                                 <span className="field has-text-weight-medium">

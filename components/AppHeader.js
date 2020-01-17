@@ -34,6 +34,14 @@ const AppHeader = props => {
                             <span className="navbar-item">
                                 <a className="button is-white is-outlined" href="#">
                                     <span className="icon">
+                                        <FontAwesomeIcon icon="envelope" color="#0a8bea" />
+                                    </span>
+                                    <span>Contact</span>
+                                </a>
+                            </span>
+                            <span className="navbar-item">
+                                <a className="button is-white is-outlined" href="#">
+                                    <span className="icon">
                                         <FontAwesomeIcon icon="rocket" color="#0a8bea" />
                                     </span>
                                     <span>Resume</span>
