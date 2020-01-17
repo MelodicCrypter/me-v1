@@ -27,8 +27,9 @@ const HomePage = props => {
                                 <span className="field has-text-weight-medium">
                                     Full-stack JavaScript Developer
                                 </span>{' '}
-                                based in Philippines 🇵🇭. <br /> I build high-quality websites and
-                                applications (
+                                based in Philippines 🇵🇭.{' '}
+                                <br className="is-hidden-mobile is-hidden-tablet-only is-hidden-desktop-only" />{' '}
+                                I build high-quality websites and applications (
                                 <span className="is-italic">sometimes Command-Line Interfaces</span>
                                 ). Currently, I'm delving into learning new technologies.
                             </h2>
