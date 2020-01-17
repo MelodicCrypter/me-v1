@@ -30,7 +30,7 @@ const HomePage = props => {
                                 based in Philippines 🇵🇭. <br /> I build high-quality websites and
                                 applications (
                                 <span className="is-italic">sometimes Command-Line Interfaces</span>
-                                ). I'm passionate about coding and music.
+                                ). Currently, I'm delving into learning new technologies.
                             </h2>
                             {/*<div className="box">*/}
                             {/*    <div className="field is-grouped">*/}
