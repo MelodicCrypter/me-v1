@@ -56,6 +56,8 @@
     margin-bottom: 15px;
   }
   &.hero .subtitle {
+    font-size: 1.1em;
+    color: rgba(255, 255, 255, 0.88) !important;
     padding: 3rem 0;
     line-height: 1.5;
   }
@@ -81,9 +83,10 @@
     }
   }
 
-  h2.subtitle {
-    font-size: 1.1em;
-  }
+  //h2.subtitle {
+  //  font-size: 1.1em;
+  //  color: rgba(255, 255, 255, 0.88) !important;
+  //}
 
   .social-media {
 
@@ -94,6 +97,7 @@
       width: 20px;
       height: 26px;
       opacity: .7;
+      border: 1px solid #ffffff1a;
 
       &:hover {
         background: #70ff6e87;
@@ -125,13 +129,20 @@
 @media screen and (max-width: 768px) {
   .me {
     width: 116px !important;
-    margin-top: 10px !important;
+    margin-top: 0px !important;
   }
   h1.title {
     font-size: 1.7em !important;
   }
   h2.subtitle {
     font-size: .986em !important;
+  }
+  .social-media {
+
+    & a {
+      background: rgba(155, 165, 171, 0.34) !important;
+      border: 1px solid #ffffff1a !important;
+    }
   }
 }
 

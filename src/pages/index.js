@@ -1,8 +1,15 @@
 import React from 'react';
 import Head from 'next/head';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import styled, { keyframes } from 'styled-components';
+import { bounce } from 'react-animations';
 
 import AppLayout from '../../components/AppLayout';
+
+// Bounce Animation
+const Bounce = styled.div`
+    animation: 1s ${keyframes`${bounce}`} infinite;
+`;
 
 const HomePage = props => {
     return (
@@ -21,7 +28,9 @@ const HomePage = props => {
                                     src="/image/me.jpg?nf_resize=smartcrop&w=400&h=400"
                                 />
                             </div>
+
                             <h1 className="title">Hugh Caluscusin</h1>
+
                             <div className="social-media">
                                 <a
                                     href="https://twitter.com"
@@ -31,7 +40,7 @@ const HomePage = props => {
                                 >
                                     <FontAwesomeIcon
                                         icon="envelope"
-                                        color="#49e846"
+                                        color="#8bff88"
                                         className="iconn"
                                     />
                                 </a>
@@ -43,7 +52,7 @@ const HomePage = props => {
                                 >
                                     <FontAwesomeIcon
                                         icon={['fab', 'linkedin']}
-                                        color="#49e846"
+                                        color="#8bff88"
                                         className="iconn"
                                     />
                                 </a>
@@ -55,7 +64,7 @@ const HomePage = props => {
                                 >
                                     <FontAwesomeIcon
                                         icon={['fab', 'github']}
-                                        color="#49e846"
+                                        color="#8bff88"
                                         className="iconn"
                                     />
                                 </a>
@@ -67,14 +76,12 @@ const HomePage = props => {
                                 >
                                     <FontAwesomeIcon
                                         icon={['fab', 'medium']}
-                                        color="#49e846"
+                                        color="#8bff88"
                                         className="iconn"
                                     />
                                 </a>
                             </div>
-                            {/*<span className="aka is-size-6">*/}
-                            {/*    &lt;a.k.a&gt; Melodic Crypter &lt;/a.k.a&gt;*/}
-                            {/*</span>*/}
+
                             <h2 className="subtitle">
                                 Hi! 👋 I'm a{' '}
                                 <span className="field has-text-weight-medium">
@@ -82,10 +89,15 @@ const HomePage = props => {
                                 </span>{' '}
                                 based in Philippines 🇵🇭.{' '}
                                 <br className="is-hidden-mobile is-hidden-tablet-only is-hidden-desktop-only" />{' '}
-                                I build high-quality websites and applications (
-                                <span className="is-italic">sometimes Command-Line Interfaces</span>
-                                ). Currently, I'm delving into learning new technologies.
+                                I build high-quality websites and applications ( sometimes
+                                Command-Line Interfaces ). Currently, I'm delving into learning new
+                                technologies.
                             </h2>
+
+                            <Bounce>
+                                <h3>SAMPLE TEXT DOWN</h3>
+                            </Bounce>
+
                             {/*<div className="box">*/}
                             {/*    <div className="field is-grouped">*/}
                             {/*        <p className="control is-expanded">*/}
