@@ -7,7 +7,33 @@
     max-height: 3.4rem;
   }
   .navbar-burger {
-    color: rgb(181, 181, 181);
+    transform: rotate(0deg) scaleX(-1);
+    color: #47cd45 !important;
+    //color: rgb(181, 181, 181);
+  }
+  nav {
+
+    & span#burger .burger-span-1 {
+      width: 30px !important;
+      border-bottom: 2px solid #47cd45;
+    }
+    & span#burger .burger-span-2 {
+      width: 24px !important;
+      border-bottom: 2px solid #47cd45;
+      margin-top: 3px;
+    }
+    & span#burger .burger-span-3 {
+      width: 18px !important;
+      border-bottom: 2px solid #47cd45;
+      margin-top: 6px;
+    }
+    & span#burger.burger.is-active {
+
+      & .burger-span-3 {
+        width: 31px !important;
+        top: calc(50% + -2px) !important;
+      }
+    }
   }
 
   &.hero.is-info {
@@ -99,14 +125,14 @@
 // Mobile
 @media screen and (max-width: 768px) {
   .me {
-    width: 100px;
-    margin-top: 10px;
+    width: 100px !important;
+    margin-top: 10px !important;
   }
   h1.title {
-    font-size: 1.4em;
+    font-size: 1.4em !important;
   }
   h2.subtitle {
-    font-size: .95em;
+    font-size: .95em !important;
   }
 }
 

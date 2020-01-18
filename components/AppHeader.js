@@ -24,9 +24,9 @@ const AppHeader = props => {
                             data-target="navbarMenu"
                             onClick={toggleMenu}
                         >
-                            <span aria-hidden="true"></span>
-                            <span aria-hidden="true"></span>
-                            <span aria-hidden="true"></span>
+                            <span className="burger-span-1" aria-hidden="true"></span>
+                            <span className="burger-span-2" aria-hidden="true"></span>
+                            <span className="burger-span-3" aria-hidden="true"></span>
                         </span>
                     </div>
                     <div id="navbarMenu" className="navbar-menu">
