@@ -9,7 +9,6 @@
   .navbar-burger {
     transform: rotate(0deg) scaleX(-1);
     color: #47cd45 !important;
-    //color: rgb(181, 181, 181);
   }
   nav {
 
@@ -54,7 +53,7 @@
     box-shadow: none;
   }
   &.hero .title {
-    margin-bottom: 5px;
+    margin-bottom: 15px;
   }
   &.hero .subtitle {
     padding: 3rem 0;
@@ -125,14 +124,14 @@
 // Mobile
 @media screen and (max-width: 768px) {
   .me {
-    width: 100px !important;
+    width: 116px !important;
     margin-top: 10px !important;
   }
   h1.title {
-    font-size: 1.4em !important;
+    font-size: 1.7em !important;
   }
   h2.subtitle {
-    font-size: .95em !important;
+    font-size: .986em !important;
   }
 }
 

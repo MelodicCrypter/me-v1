@@ -31,7 +31,7 @@ const HomePage = props => {
                                 >
                                     <FontAwesomeIcon
                                         icon="envelope"
-                                        color="#87CD84"
+                                        color="#49e846"
                                         className="iconn"
                                     />
                                 </a>
@@ -43,7 +43,7 @@ const HomePage = props => {
                                 >
                                     <FontAwesomeIcon
                                         icon={['fab', 'linkedin']}
-                                        color="#87CD84"
+                                        color="#49e846"
                                         className="iconn"
                                     />
                                 </a>
@@ -55,7 +55,7 @@ const HomePage = props => {
                                 >
                                     <FontAwesomeIcon
                                         icon={['fab', 'github']}
-                                        color="#87CD84"
+                                        color="#49e846"
                                         className="iconn"
                                     />
                                 </a>
@@ -67,7 +67,7 @@ const HomePage = props => {
                                 >
                                     <FontAwesomeIcon
                                         icon={['fab', 'medium']}
-                                        color="#87CD84"
+                                        color="#49e846"
                                         className="iconn"
                                     />
                                 </a>
