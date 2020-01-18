@@ -96,6 +96,21 @@
 
 }
 
+// Mobile
+@media screen and (max-width: 768px) {
+  .me {
+    width: 100px;
+    margin-top: 10px;
+  }
+  h1.title {
+    font-size: 1.4em;
+  }
+  h2.subtitle {
+    font-size: .95em;
+  }
+}
+
+// Tablet
 @media screen and (max-width: 1023px) {
   .hero.is-info .navbar-menu {
     background-color: #00639f;

@@ -8,7 +8,7 @@ const HomePage = props => {
     return (
         <>
             <Head>
-                <title>Hugh Caluscusin - Official Website</title>
+                <title>Hugh Caluscusin - Fullstack JavaScript Developer</title>
             </Head>
 
             <AppLayout>
