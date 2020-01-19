@@ -1,25 +1,44 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Head from 'next/head';
+import scrollToComponent from 'react-scroll-to-component';
 import styled, { keyframes } from 'styled-components';
+import Fade from 'react-reveal/Fade';
 import { bounce } from 'react-animations';
 import { FaEnvelope, FaLinkedin, FaGithub, FaMedium } from 'react-icons/fa';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 
-import AppLayout from '../../components/AppLayout';
+import HeroLayout from '../../components/HeroLayout';
+import Background from '../../components/Background';
+import AppFooter from '../../components/AppFooter';
 
 // Bounce Animation
 const Bounce = styled.div`
     animation: 3s ${keyframes`${bounce}`} infinite;
 `;
 
+// Social Media icons size
+const smSize = 16;
+
 const HomePage = props => {
+    const arrowRef = useRef();
+
+    // Hanlde clicks
+    const handleArrowClick = e => {
+        scrollToComponent(arrowRef.current, {
+            offset: 0,
+            align: 'top',
+            duration: 600,
+            ease: 'inCirc',
+        });
+    };
+
     return (
         <>
             <Head>
                 <title>Hugh Caluscusin - Fullstack JavaScript Developer</title>
             </Head>
 
-            <AppLayout>
+            <HeroLayout>
                 <div className="hero-body">
                     <div className="container has-text-centered">
                         <div className="column is-6 is-offset-3">
@@ -30,7 +49,9 @@ const HomePage = props => {
                                 />
                             </div>
 
-                            <h1 className="title">Hugh Caluscusin</h1>
+                            <Fade ssrFadeout left cascade>
+                                <h1 className="title">Hugh Caluscusin</h1>
+                            </Fade>
 
                             <div className="social-media">
                                 <a
@@ -39,7 +60,7 @@ const HomePage = props => {
                                     className="has-tooltip-info has-tooltip-bottom sm-start"
                                     data-tooltip="Email"
                                 >
-                                    <FaEnvelope />
+                                    <FaEnvelope size={smSize} />
                                 </a>
                                 <a
                                     href="https://facebook.com"
@@ -47,7 +68,7 @@ const HomePage = props => {
                                     className="has-tooltip-info has-tooltip-bottom"
                                     data-tooltip="LinkedIn Account"
                                 >
-                                    <FaLinkedin />
+                                    <FaLinkedin size={smSize} />
                                 </a>
                                 <a
                                     href="https://instagram.com"
@@ -55,7 +76,7 @@ const HomePage = props => {
                                     className="has-tooltip-info has-tooltip-bottom"
                                     data-tooltip="GitHub Account"
                                 >
-                                    <FaGithub />
+                                    <FaGithub size={smSize} />
                                 </a>
                                 <a
                                     href="https://facebook.com"
@@ -63,7 +84,7 @@ const HomePage = props => {
                                     className="has-tooltip-info has-tooltip-bottom"
                                     data-tooltip="Medium Account"
                                 >
-                                    <FaMedium />
+                                    <FaMedium size={smSize} />
                                 </a>
                             </div>
 
@@ -79,30 +100,21 @@ const HomePage = props => {
                                 technologies.
                             </h2>
 
-                            <div id="arrow-down">
+                            <div id="arrow-down" onClick={handleArrowClick}>
                                 <Bounce>
                                     <MdKeyboardArrowDown size={50} />
                                 </Bounce>
                             </div>
-
-                            {/*<div className="box">*/}
-                            {/*    <div className="field is-grouped">*/}
-                            {/*        <p className="control is-expanded">*/}
-                            {/*            <input*/}
-                            {/*                className="input"*/}
-                            {/*                type="text"*/}
-                            {/*                placeholder="Enter your email"*/}
-                            {/*            />*/}
-                            {/*        </p>*/}
-                            {/*        <p className="control">*/}
-                            {/*            <a className="button is-info">Notify Me</a>*/}
-                            {/*        </p>*/}
-                            {/*    </div>*/}
-                            {/*</div>*/}
                         </div>
                     </div>
                 </div>
-            </AppLayout>
+            </HeroLayout>
+
+            <span ref={arrowRef}>
+                <Background />
+            </span>
+
+            <AppFooter />
         </>
     );
 };

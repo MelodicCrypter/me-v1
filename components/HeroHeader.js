@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaEnvelope, FaRocket } from 'react-icons/fa';
 
-const AppHeader = props => {
+const HeroHeader = props => {
     const toggleMenu = e => {
         document.querySelector('#burger').classList.toggle('is-active');
         document.querySelector('#navbarMenu').classList.toggle('is-active');
@@ -55,4 +55,4 @@ const AppHeader = props => {
     );
 };
 
-export default AppHeader;
+export default HeroHeader;

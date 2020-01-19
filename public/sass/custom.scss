@@ -1,8 +1,10 @@
-#app {
-  #mainWrap {
-    height: 100vh;
-  }
+// Default
+body {
+  background: #18252d;
+}
 
+// Hero Section
+#HeroLayout {
   .navbar-item img {
     max-height: 3.4rem;
   }
@@ -99,11 +101,11 @@
       background: #c7b1b540;
       opacity: .7;
       border: 1px solid #ffffff1a;
-      padding: 7px 9px;
+      padding: 5.4px 6.6px;
       color: #a4ffa3;
 
       & svg {
-        width: 14px !important;
+        //width: 14px !important;
         top: 2px !important;
         position: relative !important;
 
@@ -139,16 +141,25 @@
   }
   [data-tooltip]:not([disabled]).has-tooltip-info:not(.has-tooltip-right)::after {
     border-color: rgba(179, 162, 173, 0.9) transparent transparent transparent;
+    transform: rotate(180deg)
   }
 
   #arrow-down {
-    margin-top: 60px;
+    margin-top: auto;
+    top: 10vh;
+    position: relative;
+    color: #a1d09d !important;
 
     &:hover {
       cursor: pointer;
     }
   }
+}
 
+// Background Section
+#BackgroundComponent {
+  height: 1600px;
+  background: cadetblue;
 }
 
 // Mobile
