@@ -33,6 +33,10 @@
         top: calc(50% + -2px) !important;
       }
     }
+
+    & #navbarMenu span.icon {
+      color: #0a8bea;
+    }
   }
 
   &.hero.is-info {
@@ -80,13 +84,12 @@
       width: 100%;
       border: 2.60px solid #0a8bea;
       box-shadow: 0px 2px 6px 3px #5d5771;
+
+      &:hover {
+        border: 2.60px solid #9ecf9d;
+      }
     }
   }
-
-  //h2.subtitle {
-  //  font-size: 1.1em;
-  //  color: rgba(255, 255, 255, 0.88) !important;
-  //}
 
   .social-media {
 
@@ -94,20 +97,35 @@
       border-radius: 50%;
       margin-left: 14px;
       background: #c7b1b540;
-      width: 20px;
-      height: 26px;
       opacity: .7;
       border: 1px solid #ffffff1a;
+      padding: 7px 9px;
+      color: #a4ffa3;
+
+      & svg {
+        width: 14px !important;
+        top: 2px !important;
+        position: relative !important;
+
+        &:hover {
+          color: white;
+          opacity: 1 !important;
+        }
+      }
 
       &:hover {
         background: #70ff6e87;
         opacity: 1 !important;
       }
-
-      &:hover .iconn {
+      &:hover svg {
         color: white;
         opacity: 1 !important;
       }
+
+      //&:hover .iconn {
+      //  color: white;
+      //  opacity: 1 !important;
+      //}
     }
 
     & .sm-start {
@@ -121,6 +139,14 @@
   }
   [data-tooltip]:not([disabled]).has-tooltip-info:not(.has-tooltip-right)::after {
     border-color: rgba(179, 162, 173, 0.9) transparent transparent transparent;
+  }
+
+  #arrow-down {
+    margin-top: 60px;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
 }

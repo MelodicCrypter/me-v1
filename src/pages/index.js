@@ -1,14 +1,15 @@
 import React from 'react';
 import Head from 'next/head';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled, { keyframes } from 'styled-components';
 import { bounce } from 'react-animations';
+import { FaEnvelope, FaLinkedin, FaGithub, FaMedium } from 'react-icons/fa';
+import { MdKeyboardArrowDown } from 'react-icons/md';
 
 import AppLayout from '../../components/AppLayout';
 
 // Bounce Animation
 const Bounce = styled.div`
-    animation: 1s ${keyframes`${bounce}`} infinite;
+    animation: 3s ${keyframes`${bounce}`} infinite;
 `;
 
 const HomePage = props => {
@@ -35,50 +36,34 @@ const HomePage = props => {
                                 <a
                                     href="https://twitter.com"
                                     target="_blank"
-                                    className="button is-primary is-small has-tooltip-info has-tooltip-bottom sm-start"
+                                    className="has-tooltip-info has-tooltip-bottom sm-start"
                                     data-tooltip="Email"
                                 >
-                                    <FontAwesomeIcon
-                                        icon="envelope"
-                                        color="#8bff88"
-                                        className="iconn"
-                                    />
+                                    <FaEnvelope />
                                 </a>
                                 <a
                                     href="https://facebook.com"
                                     target="_blank"
-                                    className="button is-primary is-small has-tooltip-info has-tooltip-bottom"
+                                    className="has-tooltip-info has-tooltip-bottom"
                                     data-tooltip="LinkedIn Account"
                                 >
-                                    <FontAwesomeIcon
-                                        icon={['fab', 'linkedin']}
-                                        color="#8bff88"
-                                        className="iconn"
-                                    />
+                                    <FaLinkedin />
                                 </a>
                                 <a
                                     href="https://instagram.com"
                                     target="_blank"
-                                    className="button is-primary is-small has-tooltip-info has-tooltip-bottom"
+                                    className="has-tooltip-info has-tooltip-bottom"
                                     data-tooltip="GitHub Account"
                                 >
-                                    <FontAwesomeIcon
-                                        icon={['fab', 'github']}
-                                        color="#8bff88"
-                                        className="iconn"
-                                    />
+                                    <FaGithub />
                                 </a>
                                 <a
                                     href="https://facebook.com"
                                     target="_blank"
-                                    className="button is-primary is-small has-tooltip-info has-tooltip-bottom"
+                                    className="has-tooltip-info has-tooltip-bottom"
                                     data-tooltip="Medium Account"
                                 >
-                                    <FontAwesomeIcon
-                                        icon={['fab', 'medium']}
-                                        color="#8bff88"
-                                        className="iconn"
-                                    />
+                                    <FaMedium />
                                 </a>
                             </div>
 
@@ -94,9 +79,11 @@ const HomePage = props => {
                                 technologies.
                             </h2>
 
-                            <Bounce>
-                                <h3>SAMPLE TEXT DOWN</h3>
-                            </Bounce>
+                            <div id="arrow-down">
+                                <Bounce>
+                                    <MdKeyboardArrowDown size={50} />
+                                </Bounce>
+                            </div>
 
                             {/*<div className="box">*/}
                             {/*    <div className="field is-grouped">*/}

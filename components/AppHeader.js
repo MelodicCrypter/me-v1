@@ -1,5 +1,5 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FaEnvelope, FaRocket } from 'react-icons/fa';
 
 const AppHeader = props => {
     const toggleMenu = e => {
@@ -34,7 +34,7 @@ const AppHeader = props => {
                             <span className="navbar-item">
                                 <a className="button is-white is-outlined" href="#">
                                     <span className="icon">
-                                        <FontAwesomeIcon icon="envelope" color="#0a8bea" />
+                                        <FaEnvelope />
                                     </span>
                                     <span>Contact</span>
                                 </a>
@@ -42,7 +42,7 @@ const AppHeader = props => {
                             <span className="navbar-item">
                                 <a className="button is-white is-outlined" href="#">
                                     <span className="icon">
-                                        <FontAwesomeIcon icon="rocket" color="#0a8bea" />
+                                        <FaRocket />
                                     </span>
                                     <span>Resume</span>
                                 </a>

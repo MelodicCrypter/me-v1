@@ -1,12 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab } from '@fortawesome/free-brands-svg-icons';
-import { faRocket, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 import '../public/sass/main.scss';
-
-library.add(fab, faRocket, faEnvelope);
 
 const Page = props => {
     return (
