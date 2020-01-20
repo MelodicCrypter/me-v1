@@ -164,15 +164,21 @@ body {
 
 // Mobile
 @media screen and (max-width: 768px) {
+  #HeroLayout {
+    .navbar-item img {
+      max-height: 3.2rem;
+    }
+  }
+
   .me {
     width: 100px !important;
     margin-top: 0px !important;
   }
   h1.title {
-    font-size: 1.6em !important;
+    font-size: 1.75em !important;
   }
   h2.subtitle {
-    font-size: .9em !important;
+    font-size: .94em !important;
   }
   .social-media {
 
