@@ -9,6 +9,9 @@ import { MdKeyboardArrowDown } from 'react-icons/md';
 
 import HeroLayout from '../../components/HeroLayout';
 import Background from '../../components/Background';
+import Skills from '../../components/Skills';
+import Experience from '../../components/Experience';
+import Projects from '../../components/Projects';
 import AppFooter from '../../components/AppFooter';
 
 // Bounce Animation
@@ -19,15 +22,27 @@ const Bounce = styled.div`
 // Social Media icons size
 const smSize = 16;
 
+// Experiences timeline
+const works = [
+    {
+        company: 'Self-Employed (Freelancing)',
+        duration: 'Jan 2014 - Present',
+        role: 'Web/App Developer',
+    },
+    { company: 'Rose Institute', duration: 'Dec 2013 - Dec 2014', role: 'Web Developer' },
+];
+
+// <HomePage /> Component
 const HomePage = props => {
-    const arrowRef = useRef();
+    // For clicking the arrow down
+    const backgroundRef = useRef();
 
     // Hanlde clicks
     const handleArrowClick = e => {
-        scrollToComponent(arrowRef.current, {
+        scrollToComponent(backgroundRef.current, {
             offset: 0,
             align: 'top',
-            duration: 600,
+            duration: 800,
             ease: 'inCirc',
         });
     };
@@ -94,7 +109,10 @@ const HomePage = props => {
                                     Full-stack JavaScript Developer
                                 </span>{' '}
                                 based in Philippines 🇵🇭.{' '}
-                                <br className="is-hidden-mobile is-hidden-tablet-only is-hidden-desktop-only" />{' '}
+                                <br
+                                    className="is-hidden-mobile is-hidden-tablet-only
+                                    is-hidden-desktop-only"
+                                />
                                 I build high-quality websites and applications ( sometimes
                                 Command-Line Interfaces ). Currently, I'm delving into learning new
                                 technologies.
@@ -110,9 +128,21 @@ const HomePage = props => {
                 </div>
             </HeroLayout>
 
-            <span ref={arrowRef}>
-                <Background />
-            </span>
+            <section ref={backgroundRef}>
+                <Background delay={580} />
+            </section>
+
+            <section>
+                <Skills delay={360} />
+            </section>
+
+            <section>
+                <Experience delay={360} data={works} />
+            </section>
+
+            <section>
+                <Projects delay={360} data={{}} />
+            </section>
 
             <AppFooter />
         </>

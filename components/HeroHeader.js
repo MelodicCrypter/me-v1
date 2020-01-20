@@ -13,7 +13,7 @@ const HeroHeader = props => {
                 <div className="container">
                     <div className="navbar-brand">
                         <a className="navbar-item" href="../">
-                            <img src="/image/hc_logo.png" alt="Logo" />
+                            <img src="/image/hc_logo.png" alt="Hugh Caluscusin Logo" />
                         </a>
                         <span
                             id="burger"

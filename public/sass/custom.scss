@@ -3,6 +3,19 @@ body {
   background: #18252d;
 }
 
+// Global
+.is-8 {
+  font-size: .9em;
+}
+.is-linkish {
+  background: #4266a0 !important;
+  outline: none;
+  border: none;
+}
+.is-greenish {
+  color: #cdfdbb !important;
+}
+
 // Hero Section
 #HeroLayout {
   .navbar-item img {
@@ -62,7 +75,7 @@ body {
     margin-bottom: 15px;
   }
   &.hero .subtitle {
-    font-size: 1em;
+    font-size: 1.1em;
     color: rgba(255, 255, 255, 0.88) !important;
     padding: 3rem 0;
     line-height: 1.5;
@@ -156,17 +169,88 @@ body {
   }
 }
 
-// Background Section
-#BackgroundComponent {
-  height: 1600px;
-  background: cadetblue;
+// Common styles for Background, Skills, sections
+#BackgroundComponent,
+#SkillsComponent,
+#ExperienceComponent,
+#ProjectsComponent {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: #3f3d5a !important;
+  min-height: 60vh;
+  height: auto;
+
+  & p,
+  li {
+    color: white;
+    list-style: none;
+  }
+
+  & .content ul {
+    margin-left: .5em;
+  }
+
+  & .headings {
+    width: 140px;
+  }
 }
 
+// Background Section
+#BackgroundComponent {
+  box-shadow: 0px 18px 30px 21px rgba(50, 50, 50, 0.75);
+  border-top: 1px solid #9e5f7f;
+}
+
+// Experience Section
+#ExperienceComponent {
+  & .custom-heading {
+    text-align: left !important;
+  }
+}
+
+// Projects Section
+#ProjectsComponent {
+  min-height: 80vh !important;
+  height: auto !important;
+
+  & .headings {
+    width: 200px !important;
+  }
+}
+
+// Footer
+footer {
+  background-color: #dcdbd3 !important;
+  min-height: 24vh;
+  height: auto;
+  background: linear-gradient(12deg, #e37682 15%, #a496d0 85%);
+  color: #4b474e;
+
+  & .footer-divider {
+    margin-bottom: 30px;
+  }
+
+  & a {
+    color: inherit;
+  }
+
+  & ul {
+    margin-left: -10px;
+
+    & li {
+      margin-left: 10px;
+    }
+  }
+}
+
+// ---------- Below are Breakpoint styles -------------
 // Mobile
 @media screen and (max-width: 768px) {
   #HeroLayout {
     .navbar-item img {
-      max-height: 3.2rem;
+      max-height: 2.7rem;
     }
   }
 
@@ -178,13 +262,14 @@ body {
     font-size: 1.75em !important;
   }
   h2.subtitle {
-    font-size: .94em !important;
+    font-size: .990em !important;
   }
   .social-media {
 
     & a {
       background: rgba(155, 165, 171, 0.34) !important;
       border: 1px solid #ffffff1a !important;
+      padding: 4.8px 6.6px !important;
     }
   }
 
