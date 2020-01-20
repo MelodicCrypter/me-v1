@@ -62,7 +62,7 @@ body {
     margin-bottom: 15px;
   }
   &.hero .subtitle {
-    font-size: 1.1em;
+    font-size: 1em;
     color: rgba(255, 255, 255, 0.88) !important;
     padding: 3rem 0;
     line-height: 1.5;
@@ -165,14 +165,14 @@ body {
 // Mobile
 @media screen and (max-width: 768px) {
   .me {
-    width: 116px !important;
+    width: 100px !important;
     margin-top: 0px !important;
   }
   h1.title {
-    font-size: 1.7em !important;
+    font-size: 1.6em !important;
   }
   h2.subtitle {
-    font-size: .986em !important;
+    font-size: .9em !important;
   }
   .social-media {
 
@@ -180,6 +180,10 @@ body {
       background: rgba(155, 165, 171, 0.34) !important;
       border: 1px solid #ffffff1a !important;
     }
+  }
+
+  #arrow-down {
+    top: 5vh !important;
   }
 }
 
