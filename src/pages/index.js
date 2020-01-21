@@ -1,11 +1,13 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import Head from 'next/head';
 import scrollToComponent from 'react-scroll-to-component';
 import styled, { keyframes } from 'styled-components';
 import Fade from 'react-reveal/Fade';
+import { Waypoint } from 'react-waypoint';
 import { bounce } from 'react-animations';
 import { FaEnvelope, FaLinkedin, FaGithub, FaMedium } from 'react-icons/fa';
 import { MdKeyboardArrowDown } from 'react-icons/md';
+import { AiOutlineVerticalAlignTop } from 'react-icons/ai';
 
 import HeroLayout from '../../components/HeroLayout';
 import Background from '../../components/Background';
@@ -13,6 +15,7 @@ import Skills from '../../components/Skills';
 import Experience from '../../components/Experience';
 import Projects from '../../components/Projects';
 import AppFooter from '../../components/AppFooter';
+import { works, projects, skills } from '../../public/data/mine';
 
 // Bounce Animation
 const Bounce = styled.div`
@@ -22,29 +25,32 @@ const Bounce = styled.div`
 // Social Media icons size
 const smSize = 16;
 
-// Experiences timeline
-const works = [
-    {
-        company: 'Self-Employed (Freelancing)',
-        duration: 'Jan 2014 - Present',
-        role: 'Web/App Developer',
-    },
-    { company: 'Rose Institute', duration: 'Dec 2013 - Dec 2014', role: 'Web Developer' },
-];
-
 // <HomePage /> Component
 const HomePage = props => {
-    // For clicking the arrow down
+    // State if to show auto scroll-to-top or not
+    const [range, setRange] = useState('');
+    // For clicking the arrow down/top
     const backgroundRef = useRef();
+    const heroRef = useRef();
 
     // Hanlde clicks
-    const handleArrowClick = e => {
-        scrollToComponent(backgroundRef.current, {
-            offset: 0,
-            align: 'top',
-            duration: 800,
-            ease: 'inCirc',
-        });
+    const handleArrowClick = target => {
+        console.log(target);
+        if (target === 'arrow-down') {
+            scrollToComponent(backgroundRef.current, {
+                offset: 0,
+                align: 'top',
+                duration: 800,
+                ease: 'inCirc',
+            });
+        } else {
+            scrollToComponent(heroRef.current, {
+                offset: -200,
+                align: 'top',
+                duration: 500,
+                ease: 'inCirc',
+            });
+        }
     };
 
     return (
@@ -54,7 +60,7 @@ const HomePage = props => {
             </Head>
 
             <HeroLayout>
-                <div className="hero-body">
+                <div className="hero-body" ref={heroRef}>
                     <div className="container has-text-centered">
                         <div className="column is-6 is-offset-3">
                             <div className="me image">
@@ -113,12 +119,12 @@ const HomePage = props => {
                                     className="is-hidden-mobile is-hidden-tablet-only
                                     is-hidden-desktop-only"
                                 />
-                                I build high-quality websites and applications ( sometimes
-                                Command-Line Interfaces ). Currently, I'm delving into learning new
+                                I build high-quality websites and applications (sometimes
+                                Command-Line Interfaces). Currently, I'm delving into learning new
                                 technologies.
                             </h2>
 
-                            <div id="arrow-down" onClick={handleArrowClick}>
+                            <div id="arrow-down" onClick={e => handleArrowClick('arrow-down')}>
                                 <Bounce>
                                     <MdKeyboardArrowDown size={50} />
                                 </Bounce>
@@ -133,16 +139,40 @@ const HomePage = props => {
             </section>
 
             <section>
-                <Skills delay={360} />
+                <Skills delay={360} data={skills} />
             </section>
+
+            <Waypoint
+                onEnter={({ previousPosition, currentPosition }) => {
+                    // do something useful!
+                    currentPosition === 'inside' ? setRange('inside') : '';
+                }}
+                onLeave={({ previousPosition, currentPosition }) => {
+                    currentPosition === 'below' ? setRange('below') : '';
+                }}
+            />
 
             <section>
                 <Experience delay={360} data={works} />
             </section>
 
+            <Fade delay={360}>
+                <div className="is-divider" data-content=" VIEW RESUME 🏹"></div>
+            </Fade>
+
             <section>
-                <Projects delay={360} data={{}} />
+                <Projects delay={360} data={projects} />
             </section>
+
+            {range === 'inside' ? (
+                <div id="scrollToTop" onClick={e => handleArrowClick('arrow-top')}>
+                    <span>
+                        <AiOutlineVerticalAlignTop size={20} />
+                    </span>
+                </div>
+            ) : (
+                <div></div>
+            )}
 
             <AppFooter />
         </>

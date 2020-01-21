@@ -32,18 +32,50 @@ const Background = props => {
                                     </div>
                                 </div>
                                 <div className="column">
-                                    <div className="">
-                                        {/*<p className="title is-5">Flexible column</p>*/}
-                                        <p className="is-size-6 has-text-left">
-                                            This column will take up the remaining space available.
-                                            This column will take up the remaining space available.
-                                            This column will take up the remaining space available.{' '}
+                                    <div className="is-body-text">
+                                        <p className="is-size-6 has-text-left is-body-text-2">
+                                            Hello! I'm Hugh, a{' '}
+                                            <span className="is-accent-white">PHP-dev</span> turned
+                                            <span className="is-accent-white">
+                                                &nbsp; Full-stack JavaScript Developer
+                                            </span>{' '}
+                                            based in the Philippines. I have a{' '}
+                                            <span className="is-accent-white">BS</span> degree in IT
+                                            from a technology institute in the Philippines and a{' '}
+                                            <span className="is-accent-white"> MSc </span>
+                                            degree in Computing and Information Systems from the
+                                            <span className="is-accent-white">
+                                                {' '}
+                                                University of South Wales,
+                                            </span>{' '}
+                                            UK.
                                         </p>
                                         <br />
-                                        <p className="is-size-6 has-text-left">
-                                            This column will take up the remaining space available.
-                                            This column will take up the remaining space available.
-                                            This column will take up the remaining space available.{' '}
+                                        <p className="is-size-6 has-text-left is-body-text-2">
+                                            Right now, I am working as a Freelance Web App
+                                            Developer.{' '}
+                                            <span className="is-accent-white">
+                                                Being a freelancer,
+                                            </span>{' '}
+                                            it has taught me lot of things especially in handling
+                                            clients and how to be responsible in managing time and
+                                            projects. Regarding technology and tools, I do not
+                                            reinvent the wheel but I utilize them in order to
+                                            produce high-quality applications. For an instance,
+                                            instead of building this site using plain Vanilla JS,
+                                            HTML & CSS from scratch (which I can if I want to), I
+                                            used NextJS for components and routing stuff, and Bulma
+                                            for class-based styling.
+                                        </p>
+                                        <br />
+                                        <p className="is-size-6 has-text-left is-body-text-2">
+                                            <span className="is-accent-white">
+                                                When I'm not in front of a computer screen,
+                                            </span>{' '}
+                                            I'm probably playing table tennis or frisbee. Out with
+                                            my wife and daughter, or most probably I am writing and
+                                            editing songs - I am also a{' '}
+                                            <span className="is-accent-white">music producer.</span>
                                         </p>
                                     </div>
                                 </div>

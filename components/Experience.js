@@ -50,7 +50,7 @@ const Experience = ({ delay, data }) => {
 
                                                     <p
                                                         className={`
-                                                    is-7 has-text-left 
+                                                    is-7 has-text-left is-body-text 
                                                     ${isMobileOrTablet ? 'is-8' : 'is-7'}
                                                 `}
                                                     >

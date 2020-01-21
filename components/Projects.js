@@ -23,48 +23,54 @@ const Projects = ({ delay, data }) => {
                         }`}
                     >
                         <Fade delay={delay}>
-                            <div className="columns">
-                                <div className="column is-narrow">
-                                    <div className="headings">
-                                        <p className="button is-linkish is-greenish title has-text-left is-6 has-text-weight-semibold">
-                                            SOME THINGS I'VE BUILT
-                                        </p>
-                                    </div>
-                                </div>
+                            <div className="custom-heading">
+                                <p className="button is-linkish is-greenish title has-text-left is-6 has-text-weight-semibold">
+                                    SOME THINGS I'VE BUILT
+                                </p>
+                            </div>
 
-                                <div className="column">
-                                    <div className="columns is-mobile is-multiline">
-                                        <div className="column is-full-mobile is-full-tablet is-three-fifths-desktop">
-                                            <img src="/image/blistabloc.png" alt="" />
-                                            <div className="buttons">
-                                                <span className="button is-link is-inverted is-outlined is-greenish is-small">
-                                                    Nodeå
-                                                </span>
-                                                <span className="button is-link is-inverted is-outlined is-small">
-                                                    Express
-                                                </span>
-                                                <span className="button is-link is-inverted is-outlined is-small">
-                                                    NextJS
-                                                </span>
-                                                <span className="button is-link is-inverted is-outlined is-small">
-                                                    React
-                                                </span>
+                            {/* Map all projects here */}
+                            {data.map(proj => {
+                                return (
+                                    <div key={proj.title} className="columns">
+                                        <div className="column is-narrow">
+                                            <div className="headings"></div>
+                                        </div>
+
+                                        <div className="column">
+                                            <div className="columns is-mobile is-multiline">
+                                                <div className="column is-full-mobile is-full-tablet is-three-fifths-desktop">
+                                                    <img src={proj.image} alt="" />
+                                                    <div className="buttons">
+                                                        {proj.techs.map(techName => {
+                                                            return (
+                                                                <span
+                                                                    key={techName}
+                                                                    className="button is-link is-inverted is-outlined is-small"
+                                                                >
+                                                                    {techName}
+                                                                </span>
+                                                            );
+                                                        })}
+                                                    </div>
+                                                </div>
+                                                <div className="column">
+                                                    <p className="is-6 has-text-weight-semibold has-text-left">
+                                                        {proj.title} &nbsp;{' '}
+                                                        <span style={{ color: 'grey' }}>|</span>{' '}
+                                                        &nbsp; &nbsp; <span>test</span> &nbsp;{' '}
+                                                        <span>test</span>
+                                                    </p>
+                                                    <br />
+                                                    <p className="is-7 has-text-left is-body-text-2">
+                                                        {proj.details}
+                                                    </p>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div className="column">
-                                            <p className="is-6 has-text-weight-semibold has-text-left">
-                                                Remindah
-                                            </p>
-                                            <br />
-                                            <p className="is-7 has-text-left">
-                                                A sample project for testing the site locally. This
-                                                was created using some of latest technology anyonce
-                                                can find in the planet earth.
-                                            </p>
-                                        </div>
                                     </div>
-                                </div>
-                            </div>
+                                );
+                            })}
                         </Fade>
                     </div>
 

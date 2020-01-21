@@ -1,6 +1,6 @@
 // Default
 body {
-  background: #18252d;
+  background: #3f3d5a;
 }
 
 // Global
@@ -14,6 +14,38 @@ body {
 }
 .is-greenish {
   color: #cdfdbb !important;
+}
+.is-body-text {
+  color: #e4d3d3 !important;
+  //color: #eabd95 !important;
+}
+.is-body-text-2 {
+  color: #eae2e2 !important;
+}
+.is-sub-heading {
+  text-shadow: 0px 1px 0px #1f1515;
+}
+.is-accent-white {
+  color: white !important;
+  font-weight: 500;
+}
+
+// Bulma Extension - modified
+.is-divider {
+  border-top: .1rem solid #5a5555 !important;
+  margin: 2rem auto !important;
+  width: 62%;
+  min-height: 10vh;
+
+  &[data-content]::after {
+    background: #291c1c;
+    color: #b5b5b5;
+    font-weight: 500;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 // Hero Section
@@ -182,8 +214,7 @@ body {
   min-height: 60vh;
   height: auto;
 
-  & p,
-  li {
+  & p {
     color: white;
     list-style: none;
   }
@@ -205,6 +236,7 @@ body {
 
 // Experience Section
 #ExperienceComponent {
+
   & .custom-heading {
     text-align: left !important;
   }
@@ -225,7 +257,7 @@ footer {
   background-color: #dcdbd3 !important;
   min-height: 24vh;
   height: auto;
-  background: linear-gradient(12deg, #e37682 15%, #a496d0 85%);
+  //background: linear-gradient(12deg, #e37682 15%, #a496d0 85%);
   color: #4b474e;
 
   & .footer-divider {
@@ -242,6 +274,23 @@ footer {
     & li {
       margin-left: 10px;
     }
+  }
+}
+
+// Scroll to top
+#scrollToTop {
+  position: fixed;
+  right: 8px;
+  bottom: 14px;
+  color: #50e24e !important;
+  background: #291c1c;
+  padding-top: 7px;
+  width: 40px;
+  height: 36px;
+  text-align: center;
+
+  &:hover {
+    cursor: pointer;
   }
 }
 
