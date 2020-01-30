@@ -58,6 +58,7 @@ export const skills = [
             'Apollo',
             'GraphQL-Yoga',
             'Prisma',
+            'Redux',
         ],
         tools: [
             'Git & GitHub',

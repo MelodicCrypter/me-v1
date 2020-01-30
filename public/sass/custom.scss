@@ -35,7 +35,7 @@ body {
   border-top: .1rem solid #5a5555 !important;
   margin: 2rem auto !important;
   width: 62%;
-  min-height: 10vh;
+  min-height: 7vh;
 
   &[data-content]::after {
     background: #291c1c;
@@ -216,6 +216,9 @@ body {
 
   & p {
     color: white;
+  }
+
+  & ul {
     list-style: none;
   }
 
@@ -236,6 +239,7 @@ body {
 
 // Experience Section
 #ExperienceComponent {
+  min-height: 40vh !important;
 
   & .custom-heading {
     text-align: left !important;
