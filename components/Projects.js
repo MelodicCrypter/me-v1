@@ -1,6 +1,13 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Fade from 'react-reveal/Fade';
 import { useMediaQuery } from 'react-responsive';
+import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
+
+// Social Media icons size
+const smSize = 20;
+// Current year
+const now = new Date();
+const year = now.getFullYear();
 
 const Projects = ({ delay, data }) => {
     const isFullHD = useMediaQuery({ minWidth: 1408 });
@@ -10,6 +17,17 @@ const Projects = ({ delay, data }) => {
     const isMobile = useMediaQuery({ minWidth: 0, maxWidth: 768 });
     const isMobileOrTablet = isMobile || isTablet;
     const isDesktopUp = isDesktop || isWidescreen || isFullHD;
+
+    const toggleModal = e => {
+        e.preventDefault();
+        document.querySelector('.modal').classList.toggle('is-active');
+        document.querySelector('html').classList.toggle('is-clipped');
+    };
+
+    const closeModal = e => {
+        document.querySelector('.modal').classList.remove('is-active');
+        document.querySelector('html').classList.remove('is-clipped');
+    };
 
     return (
         <section id="ProjectsComponent" className="section">
@@ -58,8 +76,34 @@ const Projects = ({ delay, data }) => {
                                                     <p className="is-6 has-text-weight-semibold has-text-left">
                                                         {proj.title} &nbsp;{' '}
                                                         <span style={{ color: 'grey' }}>|</span>{' '}
-                                                        &nbsp; &nbsp; <span>test</span> &nbsp;{' '}
-                                                        <span>test</span>
+                                                        &nbsp; &nbsp;{' '}
+                                                        <span className="crafts-icon">
+                                                            <a
+                                                                href={proj.link}
+                                                                rel="noopener noreferrer"
+                                                                target="_blank"
+                                                                className="sm-start"
+                                                            >
+                                                                <FaExternalLinkAlt
+                                                                    className="is-white"
+                                                                    size={smSize}
+                                                                />
+                                                            </a>
+                                                        </span>{' '}
+                                                        &nbsp;{' '}
+                                                        <span className="crafts-icon">
+                                                            <a
+                                                                href={proj.priv ? '#' : proj.github}
+                                                                rel="noopener noreferrer"
+                                                                target="_blank"
+                                                                className="sm-start"
+                                                                onClick={
+                                                                    proj.priv ? toggleModal : ''
+                                                                }
+                                                            >
+                                                                <FaGithub size={smSize} />
+                                                            </a>
+                                                        </span>
                                                     </p>
                                                     <br />
                                                     <p className="is-7 has-text-left is-body-text-2">
@@ -76,6 +120,37 @@ const Projects = ({ delay, data }) => {
 
                     <div className="column"> </div>
                 </div>
+            </div>
+
+            <div className="modal">
+                <div className="modal-background" onClick={closeModal}></div>
+                <div className="modal-content">
+                    <div className="modal-content">
+                        <div className="box">
+                            <article className="media">
+                                <div className="media-left"></div>
+                                <div className="media-content">
+                                    <div className="content">
+                                        <p className="has-text-grey-dark">
+                                            <strong>Hugh Caluscusin </strong>
+                                            <small>@MelodicCrypter </small>
+                                            <small> {year}</small>
+                                            <br />
+                                            <br />
+                                            Private Repo/Project, but available upon request. Thank
+                                            you. 😊
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <button
+                    className="modal-close is-large"
+                    aria-label="close"
+                    onClick={closeModal}
+                ></button>
             </div>
         </section>
     );

@@ -205,7 +205,8 @@ body {
 #BackgroundComponent,
 #SkillsComponent,
 #ExperienceComponent,
-#ProjectsComponent {
+#ProjectsComponent,
+#OtherProjectsComponent {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -255,6 +256,15 @@ body {
     width: 200px !important;
   }
 }
+// Other Projects Section
+#OtherProjectsComponent {
+  min-height: 60vh !important;
+  height: auto !important;
+
+  & .headings {
+    width: 200px !important;
+  }
+}
 
 // Footer
 footer {
@@ -278,6 +288,15 @@ footer {
     & li {
       margin-left: 10px;
     }
+  }
+}
+
+// Misc
+.crafts-icon a {
+  color: #339232;
+
+  &:hover {
+    color: white;
   }
 }
 

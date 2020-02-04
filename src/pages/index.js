@@ -5,7 +5,7 @@ import styled, { keyframes } from 'styled-components';
 import Fade from 'react-reveal/Fade';
 import { Waypoint } from 'react-waypoint';
 import { bounce } from 'react-animations';
-import { FaEnvelope, FaLinkedin, FaGithub, FaMedium } from 'react-icons/fa';
+import { FaEnvelope, FaLinkedin, FaGithub, FaMedium, FaNpm } from 'react-icons/fa';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 import { AiOutlineVerticalAlignTop } from 'react-icons/ai';
 
@@ -14,8 +14,9 @@ import Background from '../../components/Background';
 import Skills from '../../components/Skills';
 import Experience from '../../components/Experience';
 import Projects from '../../components/Projects';
+import OtherProjects from '../../components/OtherProjects';
 import AppFooter from '../../components/AppFooter';
-import { works, projects, skills } from '../../public/data/mine';
+import { works, projects, otherProjects, skills } from '../../public/data/mine';
 
 // Bounce Animation
 const Bounce = styled.div`
@@ -35,7 +36,6 @@ const HomePage = props => {
 
     // Hanlde clicks
     const handleArrowClick = target => {
-        console.log(target);
         if (target === 'arrow-down') {
             scrollToComponent(backgroundRef.current, {
                 offset: 0,
@@ -107,6 +107,14 @@ const HomePage = props => {
                                 >
                                     <FaMedium size={smSize} />
                                 </a>
+                                <a
+                                    href="https://facebook.com"
+                                    target="_blank"
+                                    className="has-tooltip-info has-tooltip-bottom"
+                                    data-tooltip="NPM Account"
+                                >
+                                    <FaNpm size={smSize} />
+                                </a>
                             </div>
 
                             <h2 className="subtitle">
@@ -162,6 +170,10 @@ const HomePage = props => {
 
             <section>
                 <Projects delay={360} data={projects} />
+            </section>
+
+            <section>
+                <OtherProjects delay={360} data={otherProjects} />
             </section>
 
             {range === 'inside' ? (
