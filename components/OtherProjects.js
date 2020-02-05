@@ -2,6 +2,8 @@ import React from 'react';
 import Fade from 'react-reveal/Fade';
 import { useMediaQuery } from 'react-responsive';
 
+import ProjectHeader from './ProjectHeader';
+
 const OtherProjects = ({ delay, data }) => {
     const isFullHD = useMediaQuery({ minWidth: 1408 });
     const isWidescreen = useMediaQuery({ minWidth: 1216, maxWidth: 1407 });
@@ -40,12 +42,15 @@ const OtherProjects = ({ delay, data }) => {
                                         <div className="column">
                                             <div className="columns is-mobile is-multiline">
                                                 <div className="column">
-                                                    <p className="is-6 has-text-weight-semibold has-text-left">
-                                                        {proj.title} &nbsp;{' '}
-                                                        <span style={{ color: 'grey' }}>|</span>{' '}
-                                                        &nbsp; &nbsp; <span>test</span> &nbsp;{' '}
-                                                        <span>test</span>
-                                                    </p>
+                                                    <ProjectHeader
+                                                        title={proj.title}
+                                                        link={proj.link}
+                                                        priv={proj.priv}
+                                                        github={proj.github}
+                                                        visibility="null"
+                                                        toggler={() => {}}
+                                                    />
+
                                                     <p className="is-7 has-text-left is-body-text-2">
                                                         {proj.details}
                                                     </p>

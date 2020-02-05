@@ -294,6 +294,8 @@ footer {
 // Misc
 .crafts-icon a {
   color: #339232;
+  position: relative;
+  top: 3px;
 
   &:hover {
     color: white;
@@ -347,6 +349,11 @@ footer {
 
   #arrow-down {
     top: 5vh !important;
+  }
+
+  // Bulma modification
+  .modal-content, .modal-card {
+    width: auto;
   }
 }
 

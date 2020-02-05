@@ -1,10 +1,9 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 import { useMediaQuery } from 'react-responsive';
-import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 
-// Social Media icons size
-const smSize = 20;
+import ProjectHeader from './ProjectHeader';
+
 // Current year
 const now = new Date();
 const year = now.getFullYear();
@@ -30,97 +29,92 @@ const Projects = ({ delay, data }) => {
     };
 
     return (
-        <section id="ProjectsComponent" className="section">
-            <div className="container">
-                <div className="columns is-centered">
-                    <div className="column"> </div>
+        <>
+            <section id="ProjectsComponent" className="section">
+                <div className="container">
+                    <div className="columns is-centered">
+                        <div className="column"> </div>
 
-                    <div
-                        className={`column ${
-                            isMobileOrTablet ? 'is-four-fifths' : 'is-three-quarters'
-                        }`}
-                    >
-                        <Fade delay={delay}>
-                            <div className="custom-heading">
-                                <p className="button is-linkish is-greenish title has-text-left is-6 has-text-weight-semibold">
-                                    SOME THINGS I'VE BUILT
-                                </p>
-                            </div>
+                        <div
+                            className={`column ${
+                                isMobileOrTablet ? 'is-four-fifths' : 'is-four-fifths'
+                            }`}
+                        >
+                            <Fade delay={delay}>
+                                <div className="custom-heading">
+                                    <p className="button is-linkish is-greenish title has-text-left is-6 has-text-weight-semibold">
+                                        SOME THINGS I'VE BUILT
+                                    </p>
+                                </div>
 
-                            {/* Map all projects here */}
-                            {data.map(proj => {
-                                return (
-                                    <div key={proj.title} className="columns">
-                                        <div className="column is-narrow">
-                                            <div className="headings"></div>
-                                        </div>
+                                {/* Map all projects here */}
+                                {data.map(proj => {
+                                    return (
+                                        <div key={proj.title} className="columns">
+                                            <div className="column is-narrow">
+                                                <div className="headings"></div>
+                                            </div>
 
-                                        <div className="column">
-                                            <div className="columns is-mobile is-multiline">
-                                                <div className="column is-full-mobile is-full-tablet is-three-fifths-desktop">
-                                                    <img src={proj.image} alt="" />
-                                                    <div className="buttons">
-                                                        {proj.techs.map(techName => {
-                                                            return (
-                                                                <span
-                                                                    key={techName}
-                                                                    className="button is-link is-inverted is-outlined is-small"
-                                                                >
-                                                                    {techName}
-                                                                </span>
-                                                            );
-                                                        })}
+                                            <div className="column">
+                                                <div className="columns is-mobile is-multiline">
+                                                    <div className="column is-full-mobile is-full-tablet is-three-fifths-desktop">
+                                                        <br className="is-hidden-desktop" />
+
+                                                        <ProjectHeader
+                                                            title={proj.title}
+                                                            link={proj.link}
+                                                            priv={proj.priv}
+                                                            github={proj.github}
+                                                            visibility="mt"
+                                                            toggler={e => toggleModal(e)}
+                                                        />
+
+                                                        <br className="is-hidden-desktop" />
+
+                                                        <img src={proj.image} alt="" />
+
+                                                        <div className="buttons">
+                                                            {proj.techs.map(techName => {
+                                                                return (
+                                                                    <span
+                                                                        key={techName}
+                                                                        className="button is-link is-inverted is-outlined is-small"
+                                                                    >
+                                                                        {techName}
+                                                                    </span>
+                                                                );
+                                                            })}
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div className="column">
-                                                    <p className="is-6 has-text-weight-semibold has-text-left">
-                                                        {proj.title} &nbsp;{' '}
-                                                        <span style={{ color: 'grey' }}>|</span>{' '}
-                                                        &nbsp; &nbsp;{' '}
-                                                        <span className="crafts-icon">
-                                                            <a
-                                                                href={proj.link}
-                                                                rel="noopener noreferrer"
-                                                                target="_blank"
-                                                                className="sm-start"
-                                                            >
-                                                                <FaExternalLinkAlt
-                                                                    className="is-white"
-                                                                    size={smSize}
-                                                                />
-                                                            </a>
-                                                        </span>{' '}
-                                                        &nbsp;{' '}
-                                                        <span className="crafts-icon">
-                                                            <a
-                                                                href={proj.priv ? '#' : proj.github}
-                                                                rel="noopener noreferrer"
-                                                                target="_blank"
-                                                                className="sm-start"
-                                                                onClick={
-                                                                    proj.priv ? toggleModal : ''
-                                                                }
-                                                            >
-                                                                <FaGithub size={smSize} />
-                                                            </a>
-                                                        </span>
-                                                    </p>
-                                                    <br />
-                                                    <p className="is-7 has-text-left is-body-text-2">
-                                                        {proj.details}
-                                                    </p>
+
+                                                    <div className="column">
+                                                        <ProjectHeader
+                                                            title={proj.title}
+                                                            link={proj.link}
+                                                            priv={proj.priv}
+                                                            github={proj.github}
+                                                            visibility="dwf"
+                                                            toggler={e => toggleModal(e)}
+                                                        />
+
+                                                        <br className="is-hidden-touch" />
+
+                                                        <p className="is-7 has-text-left is-body-text-2">
+                                                            {proj.details}
+                                                        </p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                );
-                            })}
-                        </Fade>
-                    </div>
+                                    );
+                                })}
+                            </Fade>
+                        </div>
 
-                    <div className="column"> </div>
+                        <div className="column"> </div>
+                    </div>
                 </div>
-            </div>
+            </section>
 
             <div className="modal">
                 <div className="modal-background" onClick={closeModal}></div>
@@ -152,7 +146,7 @@ const Projects = ({ delay, data }) => {
                     onClick={closeModal}
                 ></button>
             </div>
-        </section>
+        </>
     );
 };
 
