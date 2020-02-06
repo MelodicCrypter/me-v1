@@ -5,7 +5,7 @@ export const works = [
         duration: 'Jan 2015 - Present',
         role: 'Web/App Developer',
     },
-    { company: 'Rose Institute', duration: 'Dec 2013 - Dec 2014', role: 'Web Developer' },
+    { company: 'Rose Institute', duration: 'Dec 2012 - Dec 2013', role: 'Web Developer' },
 ];
 
 // Projects
@@ -60,7 +60,7 @@ export const projects = [
             'A web application that allow users to type, take note, download it as text, and ' +
             'insert emojis. Basically, it serves like a scratch pad. Right now, it can only' +
             ' be ran on Chrome based browser. But the user can download it as a standalone ' +
-            'desktop app.',
+            'desktop app. Support Dark mode.',
         image: '/image/projects/cratzpad_screenshot.png',
         techs: ['ES6+', 'Heroku', 'Express', 'Node', 'WebPack', 'PM2'],
         link: 'https://cratzpad.herokuapp.com/',
@@ -70,7 +70,7 @@ export const projects = [
     {
         title: 'Storya',
         details:
-            'A web chat application that allow users to chat with one another in ' +
+            'A web chat application that allow users to chat with each other in ' +
             'real-time. This is possible through Socket IO.',
         image: '/image/projects/storya_screenshot.png',
         techs: ['Vanilla JS', 'Express', 'Node', 'Socket IO'],
@@ -148,23 +148,46 @@ export const otherProjects = [
     },
     {
         title: 'Me v1',
-        details: 'A sample project for testing the site locally. This was created using some.',
-        techs: ['Vanilla JS', 'HTML5', 'SASS', 'Webpack'],
+        details:
+            'This is my portfolio site. The one you are checking right now. I offer' +
+            'the source code to other developers for free as long as they provide link-back' +
+            'and respect the license.',
+        techs: ['Netlify', 'NextJS', 'ES6+'],
+        link: 'https://www.hughcaluscusin.com',
+        github: 'https://github.com/MelodicCrypter/me-v1',
+        priv: false,
     },
     {
-        title: 'Workbox Scaffold',
-        details: 'A sample project for testing the site locally. This was created using some.',
-        techs: ['Vanilla JS', 'HTML5', 'SASS', 'Webpack'],
+        title: 'EWWB Scaffolding',
+        details:
+            'Stands for Express, Workbox, Webpack, and Babel. This is a scaffolding so ' +
+            'anytime I want to create PWA apps I can clone this and spin-up a PWA app within' +
+            " seconds. Main ingredient here is Workbox - Google's framework for PWA.",
+        techs: ['Workbox', 'Express', 'Node', 'Webpack', 'Babel', 'PWA'],
+        link: 'https://ewwb.herokuapp.com/',
+        github: 'https://github.com/MelodicCrypter/Express-Workbox-Webpack-Babel-Scaffold',
+        priv: false,
     },
     {
-        title: 'Node (MVC) Scaffold',
-        details: 'A sample project for testing the site locally. This was created using some.',
-        techs: ['Vanilla JS', 'HTML5', 'SASS', 'Webpack'],
+        title: 'Robust Node Scaffolding (MVC)',
+        details:
+            'A robust scaffolding (boilerplate) for Node, Express, MongoDB, and es6Renderer' +
+            ' based on MVC architecture. Implemented with security in mind. Packed with PM2, ' +
+            'Logger, Linting, and many more.',
+        techs: ['Node', 'Express', 'ES6+', 'MongoDB', 'Webpack', 'Bootstrap'],
+        link: 'https://robust-node-scaffolding.herokuapp.com/',
+        github: 'https://github.com/MelodicCrypter/Robust-Node-Scaffolding',
+        priv: false,
     },
     {
         title: 'Remindah',
-        details: 'A sample project for testing the site locally. This was created using some.',
+        details:
+            'It is a collaborative repository. Basically, Remindah is a cheatsheet for ' +
+            'common command-line codes.',
         techs: ['Vanilla JS', 'HTML5', 'SASS', 'Webpack'],
+        link: 'https://remindah.gq/',
+        github: 'https://github.com/MelodicCrypter/Remindah',
+        priv: false,
     },
 ];
 

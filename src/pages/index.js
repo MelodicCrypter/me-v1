@@ -9,6 +9,7 @@ import { FaEnvelope, FaLinkedin, FaGithub, FaMedium, FaNpm } from 'react-icons/f
 import { MdKeyboardArrowDown } from 'react-icons/md';
 import { AiOutlineVerticalAlignTop } from 'react-icons/ai';
 
+import DefaultMeta from '../../components/DefaultMeta';
 import HeroLayout from '../../components/HeroLayout';
 import Background from '../../components/Background';
 import Skills from '../../components/Skills';
@@ -56,7 +57,9 @@ const HomePage = props => {
     return (
         <>
             <Head>
-                <title>Hugh Caluscusin - Fullstack JavaScript Developer</title>
+                <DefaultMeta />
+                <meta name="robots" content="index, follow" />
+                <title>Hugh Caluscusin | Fullstack JavaScript Developer</title>
             </Head>
 
             <HeroLayout>
@@ -76,7 +79,8 @@ const HomePage = props => {
 
                             <div className="social-media">
                                 <a
-                                    href="https://twitter.com"
+                                    href="mailto:hughcaluscusin@gmail.com"
+                                    rel="noopener noreferrer"
                                     target="_blank"
                                     className="has-tooltip-info has-tooltip-bottom sm-start"
                                     data-tooltip="Email"
@@ -84,7 +88,8 @@ const HomePage = props => {
                                     <FaEnvelope size={smSize} />
                                 </a>
                                 <a
-                                    href="https://facebook.com"
+                                    href="https://www.linkedin.com/in/hughcaluscusin/"
+                                    rel="noopener noreferrer"
                                     target="_blank"
                                     className="has-tooltip-info has-tooltip-bottom"
                                     data-tooltip="LinkedIn Account"
@@ -92,7 +97,8 @@ const HomePage = props => {
                                     <FaLinkedin size={smSize} />
                                 </a>
                                 <a
-                                    href="https://instagram.com"
+                                    href="https://github.com/MelodicCrypter"
+                                    rel="noopener noreferrer"
                                     target="_blank"
                                     className="has-tooltip-info has-tooltip-bottom"
                                     data-tooltip="GitHub Account"
@@ -100,7 +106,8 @@ const HomePage = props => {
                                     <FaGithub size={smSize} />
                                 </a>
                                 <a
-                                    href="https://facebook.com"
+                                    href="https://medium.com/@hughcaluscusin"
+                                    rel="noopener noreferrer"
                                     target="_blank"
                                     className="has-tooltip-info has-tooltip-bottom"
                                     data-tooltip="Medium Account"
@@ -108,7 +115,8 @@ const HomePage = props => {
                                     <FaMedium size={smSize} />
                                 </a>
                                 <a
-                                    href="https://facebook.com"
+                                    href="https://www.npmjs.com/~melodic_crypter"
+                                    rel="noopener noreferrer"
                                     target="_blank"
                                     className="has-tooltip-info has-tooltip-bottom"
                                     data-tooltip="NPM Account"

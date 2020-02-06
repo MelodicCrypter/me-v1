@@ -1,5 +1,9 @@
 import React from 'react';
 import { FaHeart } from 'react-icons/fa';
+import { FaEnvelope, FaLinkedin, FaGithub, FaMedium, FaNpm } from 'react-icons/fa';
+
+// Social Media icons size
+const smSize = 16;
 
 const AppFooter = props => {
     return (
@@ -28,11 +32,44 @@ const AppFooter = props => {
 
                         <div className="level-right">
                             <p className="level-item">
-                                <ul className="is-flex is-6 has-text-weight-medium">
-                                    <li>Media</li>
-                                    <li>Links</li>
-                                    <li>Placeholder</li>
-                                </ul>
+                                <div className="social-media">
+                                    <a
+                                        href="mailto:hughcaluscusin@gmail.com"
+                                        rel="noopener noreferrer"
+                                        target="_blank"
+                                        className="sm-start"
+                                    >
+                                        <FaEnvelope size={smSize} />
+                                    </a>
+                                    <a
+                                        href="https://www.linkedin.com/in/hughcaluscusin/"
+                                        rel="noopener noreferrer"
+                                        target="_blank"
+                                    >
+                                        <FaLinkedin size={smSize} />
+                                    </a>
+                                    <a
+                                        href="https://github.com/MelodicCrypter"
+                                        rel="noopener noreferrer"
+                                        target="_blank"
+                                    >
+                                        <FaGithub size={smSize} />
+                                    </a>
+                                    <a
+                                        href="https://medium.com/@hughcaluscusin"
+                                        rel="noopener noreferrer"
+                                        target="_blank"
+                                    >
+                                        <FaMedium size={smSize} />
+                                    </a>
+                                    <a
+                                        href="https://www.npmjs.com/~melodic_crypter"
+                                        rel="noopener noreferrer"
+                                        target="_blank"
+                                    >
+                                        <FaNpm size={smSize} />
+                                    </a>
+                                </div>
                             </p>
                         </div>
                     </div>

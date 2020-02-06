@@ -1,11 +1,16 @@
 // Default
 body {
   background: #3f3d5a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 // Global
 .is-8 {
   font-size: .9em;
+}
+.is-9 {
+  font-size: .8em;
 }
 .is-linkish {
   background: #4266a0 !important;
@@ -28,6 +33,26 @@ body {
 .is-accent-white {
   color: white !important;
   font-weight: 500;
+}
+.is-sm {
+  font-size: .9rem;
+}
+.button.is-tiny {
+  border-radius: 2px;
+  font-size: 0.55rem;
+}
+.has-text-blue {
+  color: #478eb9;
+}
+.is-84x84 {
+  height: 84px;
+  width: 84px;
+}
+.is-r-7 {
+  font-size: 0.85rem;
+}
+.is-r-t-7 {
+  font-size: 0.88rem;
 }
 
 // Bulma Extension - modified
@@ -87,12 +112,9 @@ body {
   }
 
   &.hero.is-info {
-    //background: linear-gradient(
-    //                rgba(0, 0, 0, 0.5),
-    //                rgba(0, 0, 0, 0.5)
-    //), url('') no-repeat center center fixed;
-    //background-image: url(''), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-    background: linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+    //background: linear-gradient(45deg, #dc8d9675 15%, #372e50 85%), url('/image/hero-bg.jpg') no-repeat center center fixed;
+    background: linear-gradient(45deg, #562329bf 15%, #2b2048 85%), url('/image/hero-bg.jpg') no-repeat center center fixed;
+    //background: linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -138,48 +160,6 @@ body {
     }
   }
 
-  .social-media {
-
-    & a {
-      border-radius: 50%;
-      margin-left: 14px;
-      background: #c7b1b540;
-      opacity: .7;
-      border: 1px solid #ffffff1a;
-      padding: 5.4px 6.6px;
-      color: #a4ffa3;
-
-      & svg {
-        //width: 14px !important;
-        top: 2px !important;
-        position: relative !important;
-
-        &:hover {
-          color: white;
-          opacity: 1 !important;
-        }
-      }
-
-      &:hover {
-        background: #70ff6e87;
-        opacity: 1 !important;
-      }
-      &:hover svg {
-        color: white;
-        opacity: 1 !important;
-      }
-
-      //&:hover .iconn {
-      //  color: white;
-      //  opacity: 1 !important;
-      //}
-    }
-
-    & .sm-start {
-      margin-left: -4px;
-    }
-  }
-
   .has-tooltip-info::before {
     background: rgba(241, 245, 255, 0.2) !important;
     border: 1px solid rgba(255, 255, 255, 0.33);
@@ -198,6 +178,49 @@ body {
     &:hover {
       cursor: pointer;
     }
+  }
+}
+
+// Social Medias
+.social-media {
+
+  & a {
+    border-radius: 50%;
+    margin-left: 14px;
+    background: #c7b1b540;
+    opacity: .7;
+    border: 1px solid #ffffff1a;
+    padding: 5.4px 7px;
+    color: #a4ffa3;
+
+    & svg {
+      //width: 14px !important;
+      top: 2px !important;
+      position: relative !important;
+
+      &:hover {
+        color: white;
+        opacity: 1 !important;
+      }
+    }
+
+    &:hover {
+      background: #70ff6e87;
+      opacity: 1 !important;
+    }
+    &:hover svg {
+      color: white;
+      opacity: 1 !important;
+    }
+
+    //&:hover .iconn {
+    //  color: white;
+    //  opacity: 1 !important;
+    //}
+  }
+
+  & .sm-start {
+    margin-left: -4px;
   }
 }
 
@@ -258,11 +281,21 @@ body {
 }
 // Other Projects Section
 #OtherProjectsComponent {
-  min-height: 60vh !important;
+  min-height: 140vh !important;
   height: auto !important;
 
   & .headings {
     width: 200px !important;
+  }
+
+  & .buttons {
+    margin-top: 7px;
+  }
+
+  & .bg {
+    background: #b18d720a;
+    border-radius: 4px;
+    margin-bottom: 18px;
   }
 }
 
@@ -287,6 +320,34 @@ footer {
 
     & li {
       margin-left: 10px;
+    }
+  }
+
+  & .sm-start {
+    margin: 0px !important;
+  }
+
+  & .social-media {
+    position: relative;
+    left: 6px;
+
+    & a {
+      padding: 5.4px 6.6px;
+      margin-left: 6px;
+      color: #5f635f;
+      border: 1px solid #7d7373c7;
+
+      &:hover {
+        background: none;
+      }
+
+      &:hover svg {
+        color: #775d5d;
+      }
+
+      & svg:hover {
+        color: #775d5d;
+      }
     }
   }
 }
@@ -338,13 +399,15 @@ footer {
   h2.subtitle {
     font-size: .990em !important;
   }
-  .social-media {
-
-    & a {
+  .social-media a {
       background: rgba(155, 165, 171, 0.34) !important;
       border: 1px solid #ffffff1a !important;
-      padding: 4.8px 6.6px !important;
-    }
+      padding: 4.8px 6px !important;
+  }
+
+  footer .social-media a {
+    padding: 4.8px 5.5px !important;
+    border: 1px solid #7d7373c7 !important;
   }
 
   #arrow-down {
@@ -354,6 +417,13 @@ footer {
   // Bulma modification
   .modal-content, .modal-card {
     width: auto;
+  }
+
+  // Resume Page
+  #resumeMenu {
+    margin-top: -8px !important;
+    padding-right: 20px !important;
+    padding-left: 20px !important;
   }
 }
 

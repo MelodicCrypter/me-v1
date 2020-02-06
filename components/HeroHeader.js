@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaEnvelope, FaRocket } from 'react-icons/fa';
+import Link from 'next/link';
 
 const HeroHeader = props => {
     const toggleMenu = e => {
@@ -12,7 +13,7 @@ const HeroHeader = props => {
             <nav className="navbar" role="navigation" aria-label="main navigation">
                 <div className="container">
                     <div className="navbar-brand">
-                        <a className="navbar-item" href="../">
+                        <a className="navbar-item" href="/">
                             <img src="/image/hc_logo.png" alt="Hugh Caluscusin Logo" />
                         </a>
                         <span
@@ -32,19 +33,24 @@ const HeroHeader = props => {
                     <div id="navbarMenu" className="navbar-menu">
                         <div className="navbar-end">
                             <span className="navbar-item">
-                                <a className="button is-white is-outlined" href="#">
+                                <Link href="/resume">
+                                    <a className="button is-white is-outlined">
+                                        <span className="icon">
+                                            <FaRocket />
+                                        </span>
+                                        <span>Resume</span>
+                                    </a>
+                                </Link>
+                            </span>
+                            <span className="navbar-item">
+                                <a
+                                    className="button is-white is-outlined"
+                                    href="mailto:hughcaluscusin@gmail.com"
+                                >
                                     <span className="icon">
                                         <FaEnvelope />
                                     </span>
                                     <span>Contact</span>
-                                </a>
-                            </span>
-                            <span className="navbar-item">
-                                <a className="button is-white is-outlined" href="#">
-                                    <span className="icon">
-                                        <FaRocket />
-                                    </span>
-                                    <span>Resume</span>
                                 </a>
                             </span>
                         </div>

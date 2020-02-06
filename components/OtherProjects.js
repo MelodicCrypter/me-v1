@@ -39,7 +39,7 @@ const OtherProjects = ({ delay, data }) => {
                                             <div className="headings"></div>
                                         </div>
 
-                                        <div className="column">
+                                        <div className="column bg">
                                             <div className="columns is-mobile is-multiline">
                                                 <div className="column">
                                                     <ProjectHeader
@@ -51,9 +51,22 @@ const OtherProjects = ({ delay, data }) => {
                                                         toggler={() => {}}
                                                     />
 
-                                                    <p className="is-7 has-text-left is-body-text-2">
+                                                    <p className="is-9 has-text-left is-body-text-2">
                                                         {proj.details}
                                                     </p>
+
+                                                    <div className="buttons">
+                                                        {proj.techs.map(techName => {
+                                                            return (
+                                                                <span
+                                                                    key={techName}
+                                                                    className="button is-link is-inverted is-outlined is-tiny"
+                                                                >
+                                                                    {techName}
+                                                                </span>
+                                                            );
+                                                        })}
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>

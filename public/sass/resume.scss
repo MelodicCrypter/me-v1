@@ -1,0 +1,96 @@
+// Resume Page
+#resume {
+  background-color: #f2f5fa;
+}
+
+#resumeMenu {
+  margin-top: 40px;
+  padding-right: 0px;
+  padding-left: 0px;
+
+  & .button {
+    background: #4e5a75;
+    border: none;
+    margin-right: 10px;
+
+    & .icon {
+      color: #47cd45;
+    }
+
+    &:hover {
+      background: #47cd45;
+      color: white;
+    }
+    &:hover .icon {
+      color: white;
+    }
+  }
+
+  & img {
+    max-height: 2.7rem;
+  }
+
+  & .logo-bg {
+    background: #222a3e;
+    width: 80px;
+    padding: 1em;
+    margin-top: -40px;
+    box-shadow: 0px 2px 6px #948989;
+  }
+}
+
+#resume > .hero-body {
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 20px 60px 0 rgba(186,200,227,.1),0 16px 36px 0 rgba(186,200,227,.3);
+  width: 68%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  min-height: 40%;
+  max-height: 100%;
+  height: auto;
+  margin-top: 40px;
+  align-items: initial;
+}
+
+.resume {
+  padding-left: 3rem;
+  padding-right: 3rem;
+
+  & .r-side {
+    & .subtitle {
+      margin-top: -16px;
+    }
+  }
+
+  & .r-body {
+    margin-left: 30px
+  }
+}
+
+// ---------- Below are Breakpoint styles -------------
+// Mobile
+@media screen and (max-width: 768px) {
+  // Resume Page
+  #resume > .hero-body {
+    width: 100%;
+  }
+
+  #resumeMenu {
+    margin-top: -8px !important;
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+
+    & .logo-bg {
+      margin-top: -16px !important;
+    }
+  }
+}
+
+// Tablet only
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  // Resume Page
+  #resume > .hero-body {
+    width: 92%;
+  }
+}
