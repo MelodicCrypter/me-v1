@@ -26,7 +26,7 @@ const Resume = props => {
                             className="column is-8-widescreen is-9-desktop is-11-tablet is-12-mobile"
                         >
                             <div className="columns is-mobile">
-                                <div className="column">
+                                <div className="column left-part">
                                     <Link href="/">
                                         <a className="">
                                             <div className="logo-bg">
@@ -39,7 +39,7 @@ const Resume = props => {
                                     </Link>
                                 </div>
 
-                                <div className="column has-text-right">
+                                <div className="column right-part has-text-right">
                                     <a
                                         className="button is-white is-outlined is-sm"
                                         href="mailto:hughcaluscusin@gmail.com"
@@ -207,14 +207,30 @@ const Resume = props => {
                                     <br />
 
                                     <span>
-                                        <p className="has-text-weight-medium is-size-5">
+                                        <p className="has-text-weight-medium is-size-6">
                                             Web/App Developer, Freelancing
                                         </p>
-                                        <h6 className="title is-r-t-7 is-spaced">
+                                        <h6 className="title is-r-b-t-7">
                                             Jan 2015 - Present &nbsp; &nbsp;{' '}
-                                            <span className="is-8"> Cebu</span>
+                                            <span className="is-7"> Cebu</span>
                                         </h6>
-                                        <h6 className="subtitle is-r-7">
+                                        <h6 className="subtitle is-r-b-s-7">
+                                            Developed web application for real clients from the
+                                            ground up with technologies.
+                                        </h6>
+                                    </span>
+
+                                    <br />
+
+                                    <span>
+                                        <p className="has-text-weight-medium is-size-6">
+                                            Web Developer, Rose Institute
+                                        </p>
+                                        <h6 className="title is-r-b-t-7">
+                                            Dec 2012 - Dec 2013 &nbsp; &nbsp;{' '}
+                                            <span className="is-7"> Cebu</span>
+                                        </h6>
+                                        <h6 className="subtitle is-r-b-s-7">
                                             Developed web application for real clients from the
                                             ground up with technologies.
                                         </h6>

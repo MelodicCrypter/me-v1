@@ -108,3 +108,17 @@
   }
 }
 
+// Custom breakpoint
+@media screen and (max-width: 456px) {
+  // Resume Page
+  .right-part {
+    display: inline-flex;
+  }
+
+  .r-body .title {
+    font-size: 1.4em !important;
+  }
+  .r-body .subtitle {
+    font-size: .8em !important;
+  }
+}
