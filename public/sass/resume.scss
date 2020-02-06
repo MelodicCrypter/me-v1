@@ -73,7 +73,7 @@
 @media screen and (max-width: 768px) {
   // Resume Page
   #resume > .hero-body {
-    width: 100%;
+    width: 100% !important;
   }
 
   #resumeMenu {
@@ -85,12 +85,26 @@
       margin-top: -16px !important;
     }
   }
+
+  .resume {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
 }
 
 // Tablet only
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1023px) {
   // Resume Page
   #resume > .hero-body {
-    width: 92%;
+    width: 92% !important;
   }
 }
+
+// Desktop only
+@media screen and (min-width: 1024px) and (max-width: 1215px) {
+  // Resume Page
+  #resume > .hero-body {
+    width: 80% !important;
+  }
+}
+

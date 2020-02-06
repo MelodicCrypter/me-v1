@@ -213,7 +213,6 @@ export const skills = [
             'CLI',
             'Ngrok',
             'Postman',
-            'WorkBox',
             'ESLint/Prettier',
             'LogRocket',
         ],

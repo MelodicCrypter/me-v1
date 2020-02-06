@@ -21,7 +21,10 @@ const Resume = props => {
                     <div className="columns is-12">
                         <div className="column"></div>
 
-                        <div id="resumeMenu" className="column is-8">
+                        <div
+                            id="resumeMenu"
+                            className="column is-8-widescreen is-9-desktop is-11-tablet is-12-mobile"
+                        >
                             <div className="columns is-mobile">
                                 <div className="column">
                                     <Link href="/">
@@ -66,7 +69,7 @@ const Resume = props => {
 
                 <div className="hero-body">
                     <div className="container resume">
-                        <div className="columns">
+                        <div className="columns is-mobile">
                             <div className="column r-side is-3 is-narrow">
                                 <div className="side-image">
                                     <figure className="image is-84x84">
@@ -129,6 +132,35 @@ const Resume = props => {
                                     <p className="is-size-4 has-text-weight-medium has-text-blue">
                                         Skills
                                     </p>
+
+                                    <br />
+
+                                    <span>
+                                        <h6 className="title is-r-t-7">Languages</h6>
+                                        <h6 className="subtitle is-r-7">
+                                            JavaScript (ES6+), PHP7+, GraphQL, CSS3/Sass, HTML5,{' '}
+                                        </h6>
+                                    </span>
+
+                                    <br />
+
+                                    <span>
+                                        <h6 className="title is-r-t-7">Frameworks</h6>
+                                        <h6 className="subtitle is-r-7">
+                                            React, NextJS, CRA, Node/Express, WordPress, WorkBox,
+                                            Apollo, GraphQL-Yoga, Prisma, Redux
+                                        </h6>
+                                    </span>
+
+                                    <br />
+
+                                    <span>
+                                        <h6 className="title is-r-t-7">Tools</h6>
+                                        <h6 className="subtitle is-r-7">
+                                            Git/GitHub, Webpack, CLI, Ngrok, Postman,
+                                            ESLint/Prettier, LogRocket
+                                        </h6>
+                                    </span>
                                 </div>
                             </div>
 
@@ -171,6 +203,22 @@ const Resume = props => {
                                     <p className="is-size-4 has-text-weight-medium has-text-blue">
                                         Employment History
                                     </p>
+
+                                    <br />
+
+                                    <span>
+                                        <p className="has-text-weight-medium is-size-5">
+                                            Web/App Developer, Freelancing
+                                        </p>
+                                        <h6 className="title is-r-t-7 is-spaced">
+                                            Jan 2015 - Present &nbsp; &nbsp;{' '}
+                                            <span className="is-8"> Cebu</span>
+                                        </h6>
+                                        <h6 className="subtitle is-r-7">
+                                            Developed web application for real clients from the
+                                            ground up with technologies.
+                                        </h6>
+                                    </span>
                                 </div>
 
                                 <br />
@@ -187,7 +235,7 @@ const Resume = props => {
 
                                 <div className="body-profession">
                                     <p className="is-size-4 has-text-weight-medium has-text-blue">
-                                        Interest
+                                        Interests
                                     </p>
                                 </div>
 
