@@ -73,7 +73,11 @@ const Resume = props => {
                             <div className="column r-side is-3 is-narrow">
                                 <div className="side-image">
                                     <figure className="image is-84x84">
-                                        <img className="is-rounded" src="/image/me.jpg" />
+                                        <img
+                                            className="is-rounded"
+                                            src="/image/me-new.jpg"
+                                            alt="Hugh Caluscusin"
+                                        />
                                     </figure>
                                 </div>
 

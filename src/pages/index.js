@@ -69,7 +69,8 @@ const HomePage = props => {
                             <div className="me image">
                                 <img
                                     className="is-rounded"
-                                    src="/image/me.jpg?nf_resize=smartcrop&w=400&h=400"
+                                    src="/image/me-new.jpg?nf_resize=smartcrop&w=400&h=400"
+                                    alt="Hugh Caluscusin"
                                 />
                             </div>
 
