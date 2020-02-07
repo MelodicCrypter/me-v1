@@ -25,7 +25,7 @@ export const projects = [
         title: 'Origz',
         details:
             'An e-Commerce web application powered by latest technologies. For now, it is ' +
-            'for a fictional company "Origz". Created to showcase skills for latest technologies.',
+            'for a fictitious company called "Origz". Created to showcase skills for latest technologies.',
         image: '/image/projects/origz_screenshot.png',
         techs: [
             'NextJS',

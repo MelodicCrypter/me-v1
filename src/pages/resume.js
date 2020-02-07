@@ -2,6 +2,19 @@ import React from 'react';
 import Head from 'next/head';
 import { AiOutlinePrinter } from 'react-icons/ai';
 import { IoMdCodeDownload } from 'react-icons/io';
+import {
+    TiHomeOutline,
+    TiPhoneOutline,
+    TiMail,
+    TiCodeOutline,
+    TiSpannerOutline,
+    TiWaves,
+    TiDivideOutline,
+    TiWeatherCloudy,
+    TiZoomOutline,
+    TiStarHalfOutline,
+    TiLocationOutline,
+} from 'react-icons/ti';
 import Link from 'next/link';
 
 import DefaultMeta from '../../components/DefaultMeta';
@@ -92,7 +105,9 @@ const Resume = props => {
                                     <br />
 
                                     <span>
-                                        <h6 className="title is-r-t-7">Address</h6>
+                                        <h6 className="title is-r-t-7">
+                                            <TiHomeOutline color="grey" size={12} /> Address
+                                        </h6>
                                         <h6 className="subtitle is-r-7">
                                             Zone 6, Bascon St., Graceville Homes, Brgy Dumlog, Cebu,
                                             6045, Philippines
@@ -102,14 +117,18 @@ const Resume = props => {
                                     <br />
 
                                     <span>
-                                        <h6 className="title is-r-t-7">Phone</h6>
+                                        <h6 className="title is-r-t-7">
+                                            <TiPhoneOutline color="grey" size={13} /> Phone
+                                        </h6>
                                         <h6 className="subtitle is-r-7">+639559328520</h6>
                                     </span>
 
                                     <br />
 
                                     <span>
-                                        <h6 className="title is-r-t-7">Email</h6>
+                                        <h6 className="title is-r-t-7">
+                                            <TiMail size={14} color="grey" /> Email
+                                        </h6>
                                         <h6 className="subtitle is-r-7">
                                             hughcaluscusin@gmail.com
                                         </h6>
@@ -118,7 +137,9 @@ const Resume = props => {
                                     <br />
 
                                     <span>
-                                        <h6 className="title is-r-t-7">Portfolio</h6>
+                                        <h6 className="title is-r-t-7">
+                                            <TiCodeOutline color="grey" size={14} /> Portfolio
+                                        </h6>
                                         <Link href="/">
                                             <a>
                                                 <h6 className="subtitle is-r-7">
@@ -140,16 +161,20 @@ const Resume = props => {
                                     <br />
 
                                     <span>
-                                        <h6 className="title is-r-t-7">Languages</h6>
+                                        <h6 className="title is-r-t-7">
+                                            <TiDivideOutline color="grey" size={12} /> Languages
+                                        </h6>
                                         <h6 className="subtitle is-r-7">
-                                            JavaScript (ES6+), PHP7+, GraphQL, CSS3/Sass, HTML5,{' '}
+                                            JavaScript (ES6+), PHP7+, GraphQL, CSS3/Sass, HTML5{' '}
                                         </h6>
                                     </span>
 
                                     <br />
 
                                     <span>
-                                        <h6 className="title is-r-t-7">Frameworks</h6>
+                                        <h6 className="title is-r-t-7">
+                                            <TiWaves color="grey" size={12} /> Frameworks
+                                        </h6>
                                         <h6 className="subtitle is-r-7">
                                             React, NextJS, CRA, Node/Express, WordPress, WorkBox,
                                             Apollo, GraphQL-Yoga, Prisma, Redux
@@ -159,10 +184,36 @@ const Resume = props => {
                                     <br />
 
                                     <span>
-                                        <h6 className="title is-r-t-7">Tools</h6>
+                                        <h6 className="title is-r-t-7">
+                                            <TiSpannerOutline color="grey" size={12} /> Tools
+                                        </h6>
                                         <h6 className="subtitle is-r-7">
                                             Git/GitHub, Webpack, CLI, Ngrok, Postman,
                                             ESLint/Prettier, LogRocket
+                                        </h6>
+                                    </span>
+
+                                    <br />
+
+                                    <span>
+                                        <h6 className="title is-r-t-7">
+                                            <TiWeatherCloudy color="grey" size={12} /> Platforms
+                                        </h6>
+                                        <h6 className="subtitle is-r-7">
+                                            Heroku, AWS EC2, Zeit/Now, Netlify, cPanel/Apache
+                                        </h6>
+                                    </span>
+
+                                    <br />
+
+                                    <span>
+                                        <h6 className="title is-r-t-7">
+                                            <TiStarHalfOutline color="grey" size={12} /> Design &
+                                            Other
+                                        </h6>
+                                        <h6 className="subtitle is-r-7">
+                                            Photoshop, Adobe XD, Wireframing, Jest, Enzyme, MongoDB,
+                                            MySQL, PostgreSQL, Firebase, Travis CI
                                         </h6>
                                     </span>
                                 </div>
@@ -189,13 +240,16 @@ const Resume = props => {
 
                                     <span>
                                         <p className="is-r-7">
-                                            Passionate simply dummy text of the printing and
-                                            typesetting industry. Lorem Ipsum has been the
-                                            industry's standard dummy text ever since the 1500s,
-                                            when an unknown printer took a galley of type and
-                                            scrambled it to make a type specimen book. It has
-                                            survived not only five centuries, but also the leap into
-                                            electronic typesetting, remaining essentially unchanged.
+                                            Dedicated freelance programmer, shifted from being a PHP
+                                            developer to become a fullstack JavaScript developer.
+                                            More than 3 years of PHP experience and about 2 years of
+                                            fullstack JavaScript experience. Skilled in ES6+ and
+                                            Node and React (NextJS), eager to join your team to
+                                            provide both frontend and backend solutions to your
+                                            clients. Able to work in a team or as solo. In freelance
+                                            world, proper handling of clients and delivering their
+                                            products on time are the main keys, gradually learned
+                                            those through the years.
                                         </p>
                                     </span>
                                 </div>
@@ -211,12 +265,15 @@ const Resume = props => {
                                     <br />
 
                                     <span>
-                                        <p className="has-text-weight-medium is-size-6">
+                                        <p className="has-text-weight-medium is-size-6 is-r-b-t1-7">
                                             Web/App Developer, Freelancing
                                         </p>
-                                        <h6 className="title is-r-b-t-7">
+                                        <h6 className="title is-r-b-t2-7">
                                             Jan 2015 - Present &nbsp; &nbsp;{' '}
-                                            <span className="is-7"> Cebu</span>
+                                            <span className="is-7">
+                                                <TiLocationOutline color="grey" size={12} /> Cebu
+                                                Philippines
+                                            </span>
                                         </h6>
                                         <h6 className="subtitle is-r-b-s-7">
                                             Developed web application for real clients from the
@@ -227,12 +284,15 @@ const Resume = props => {
                                     <br />
 
                                     <span>
-                                        <p className="has-text-weight-medium is-size-6">
+                                        <p className="has-text-weight-medium is-size-6 is-r-b-t1-7">
                                             Web Developer, Rose Institute
                                         </p>
-                                        <h6 className="title is-r-b-t-7">
-                                            Dec 2012 - Dec 2013 &nbsp; &nbsp;{' '}
-                                            <span className="is-7"> Cebu</span>
+                                        <h6 className="title is-r-b-t2-7">
+                                            Dec 2012 - Dec 2013 &nbsp;{' '}
+                                            <span className="is-7">
+                                                <TiLocationOutline color="grey" size={12} /> Cebu
+                                                Philippines
+                                            </span>
                                         </h6>
                                         <h6 className="subtitle is-r-b-s-7">
                                             Developed web application for real clients from the
@@ -248,15 +308,54 @@ const Resume = props => {
                                     <p className="is-size-4 has-text-weight-medium has-text-blue">
                                         Education
                                     </p>
-                                </div>
 
-                                <br />
-                                <br />
+                                    <br />
 
-                                <div className="body-profession">
-                                    <p className="is-size-4 has-text-weight-medium has-text-blue">
-                                        Interests
-                                    </p>
+                                    <span>
+                                        <p className="has-text-weight-medium is-size-6 is-r-b-t1-7">
+                                            University of South Wales, MSc, Computing & Information
+                                            Systems
+                                        </p>
+                                        <h6 className="title is-r-b-t2-7">
+                                            Sep 2016 - Jan 2018 &nbsp;{' '}
+                                            <span className="is-7">
+                                                <TiLocationOutline color="grey" size={12} />{' '}
+                                                Llantwit Road, Treforest, UK
+                                            </span>
+                                        </h6>
+                                    </span>
+
+                                    <br />
+
+                                    <span>
+                                        <p className="has-text-weight-medium is-size-6 is-r-b-t1-7">
+                                            Informatics Computer Institute, BS, Information
+                                            Technology
+                                        </p>
+                                        <h6 className="title is-r-b-t2-7">
+                                            Jan 2009 - Apr 2012 &nbsp;{' '}
+                                            <span className="is-7">
+                                                <TiLocationOutline color="grey" size={12} /> Cebu,
+                                                Philippines
+                                            </span>
+                                        </h6>
+                                    </span>
+
+                                    <br />
+
+                                    <span>
+                                        <p className="has-text-weight-medium is-size-6 is-r-b-t1-7">
+                                            Systems Technology Institute, AD, Computer & Electronics
+                                            Technology
+                                        </p>
+                                        <h6 className="title is-r-b-t2-7">
+                                            Jun 2004 - Mar 2006 &nbsp;{' '}
+                                            <span className="is-7">
+                                                <TiLocationOutline color="grey" size={12} />{' '}
+                                                Dumaguete, Philippines
+                                            </span>
+                                        </h6>
+                                    </span>
                                 </div>
 
                                 <br />
@@ -266,6 +365,32 @@ const Resume = props => {
                                     <p className="is-size-4 has-text-weight-medium has-text-blue">
                                         References
                                     </p>
+
+                                    <br />
+
+                                    <span>
+                                        <h6 className="subtitle is-r-b-s-7">
+                                            References avialable upon request.
+                                        </h6>
+                                    </span>
+                                </div>
+
+                                <br />
+                                <br />
+
+                                <div className="body-profession">
+                                    <p className="is-size-4 has-text-weight-medium has-text-blue">
+                                        Interests
+                                    </p>
+
+                                    <br />
+
+                                    <span>
+                                        <h6 className="subtitle is-r-b-s-7">
+                                            Songwriting, Music Production, Table Tennis, Frisbee,
+                                            Outdoors, Learning new stuff
+                                        </h6>
+                                    </span>
                                 </div>
                             </div>
                         </div>
