@@ -54,8 +54,9 @@ const Resume = props => {
 
                                 <div className="column right-part has-text-right">
                                     <a
+                                        download="Hugh Caluscusin - Fullstack JavaScript Developer"
                                         className="button is-white is-outlined is-sm"
-                                        href="mailto:hughcaluscusin@gmail.com"
+                                        href="/data/Hugh_Caluscusin-Fullstack_JavaScript_Developer.pdf"
                                     >
                                         <span className="icon">
                                             <IoMdCodeDownload size={22} />
@@ -65,7 +66,8 @@ const Resume = props => {
 
                                     <a
                                         className="button is-white is-outlined is-sm"
-                                        href="mailto:hughcaluscusin@gmail.com"
+                                        href="/data/Hugh_Caluscusin-Fullstack_JavaScript_Developer.pdf"
+                                        target="_blank"
                                     >
                                         <span className="icon">
                                             <AiOutlinePrinter size={19} />
@@ -276,8 +278,8 @@ const Resume = props => {
                                             </span>
                                         </h6>
                                         <h6 className="subtitle is-r-b-s-7">
-                                            Developed web application for real clients from the
-                                            ground up with technologies.
+                                            Build simple to custom web applications with
+                                            conventional workflows and technologies.
                                         </h6>
                                     </span>
 
@@ -295,8 +297,8 @@ const Resume = props => {
                                             </span>
                                         </h6>
                                         <h6 className="subtitle is-r-b-s-7">
-                                            Developed web application for real clients from the
-                                            ground up with technologies.
+                                            Designed and developed their business website from the
+                                            ground up.
                                         </h6>
                                     </span>
                                 </div>
@@ -392,6 +394,11 @@ const Resume = props => {
                                         </h6>
                                     </span>
                                 </div>
+
+                                <br />
+                                <br />
+                                <br />
+                                <br />
                             </div>
                         </div>
                     </div>
