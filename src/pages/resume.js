@@ -231,7 +231,7 @@ const Resume = props => {
 
                                 <br />
                                 <br />
-                                <br />
+                                <br className="is-hidden-touch" />
 
                                 <div className="body-profession">
                                     <p className="is-size-4 has-text-weight-medium has-text-blue">
