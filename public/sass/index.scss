@@ -135,12 +135,15 @@ body {
 
   &.hero.is-info {
     //background: linear-gradient(45deg, #dc8d9675 15%, #372e50 85%), url('/image/hero-bg.jpg') no-repeat center center fixed;
-    background: linear-gradient(45deg, #562329bf 15%, #2b2048 85%), url('/image/hero-bg.jpg') no-repeat center center fixed !important;
+    background: linear-gradient(45deg, #562329bf 15%, #2b2048 85%), url('/image/hero-bg.jpg') !important;
     //background: linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
   }
   &.hero .nav,
   &.hero.is-success .nav {
