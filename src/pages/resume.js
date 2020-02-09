@@ -16,6 +16,7 @@ import {
     TiLocationOutline,
 } from 'react-icons/ti';
 import Link from 'next/link';
+import printJS from 'print-js';
 
 import DefaultMeta from '../../components/DefaultMeta';
 
@@ -111,8 +112,8 @@ const Resume = props => {
                                             <TiHomeOutline color="grey" size={12} /> Address
                                         </h6>
                                         <h6 className="subtitle is-r-7">
-                                            Zone 6, Bascon St., Graceville Homes, Brgy Dumlog, Cebu,
-                                            6045, Philippines
+                                            Zone 6, Bascon St., Graceville Homes, Brgy Dumlog,
+                                            Talisay Cebu, 6045, Philippines
                                         </h6>
                                     </span>
 

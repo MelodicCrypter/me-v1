@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
 import scrollToComponent from 'react-scroll-to-component';
 import styled, { keyframes } from 'styled-components';
 import Fade from 'react-reveal/Fade';
@@ -174,7 +175,11 @@ const HomePage = props => {
             </section>
 
             <Fade delay={360}>
-                <div className="is-divider" data-content=" VIEW RESUME 🏹"></div>
+                <Link href="/resume">
+                    <a>
+                        <div className="is-divider" data-content=" VIEW RESUME 🏹"></div>
+                    </a>
+                </Link>
             </Fade>
 
             <section>
