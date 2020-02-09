@@ -16,7 +16,6 @@ import {
     TiLocationOutline,
 } from 'react-icons/ti';
 import Link from 'next/link';
-import printJS from 'print-js';
 
 import DefaultMeta from '../../components/DefaultMeta';
 
