@@ -56,7 +56,7 @@ const Resume = props => {
                                     <a
                                         download="Hugh Caluscusin - Fullstack JavaScript Developer"
                                         className="button is-white is-outlined is-sm"
-                                        href="/data/Hugh_Caluscusin-Fullstack_JavaScript_Developer.pdf"
+                                        href="/data/Hugh_Caluscusin_Fullstack_JavaScript_Developer_new.pdf"
                                     >
                                         <span className="icon">
                                             <IoMdCodeDownload size={22} />
@@ -66,7 +66,7 @@ const Resume = props => {
 
                                     <a
                                         className="button is-white is-outlined is-sm"
-                                        href="/data/Hugh_Caluscusin-Fullstack_JavaScript_Developer.pdf"
+                                        href="/data/Hugh_Caluscusin_Fullstack_JavaScript_Developer_new.pdf"
                                         target="_blank"
                                     >
                                         <span className="icon">
