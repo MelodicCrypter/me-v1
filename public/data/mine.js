@@ -122,7 +122,7 @@ export const otherProjects = [
             'A web app that will display your Host/Proxy IP address, Browser name, ' +
             'OS version, Internet Service Provider, Timezone and Location. A very handy tool.',
         techs: ['PHP7', 'Zeit', 'Vanilla JS', 'jQuery'],
-        link: 'https://underyourhood.now.sh',
+        link: 'https://underyourhood.herokuapp.com/',
         github: 'https://github.com/MelodicCrypter/UnderYourHood',
         priv: false,
     },
