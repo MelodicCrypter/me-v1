@@ -41,14 +41,8 @@ const Background = props => {
                                             </span>{' '}
                                             based in the Philippines. I have a{' '}
                                             <span className="is-accent-white">BS</span> degree in IT
-                                            from a technology institute in the Philippines and a{' '}
-                                            <span className="is-accent-white"> MSc </span>
-                                            degree in Computing and Information Systems from the
-                                            <span className="is-accent-white">
-                                                {' '}
-                                                University of South Wales,
-                                            </span>{' '}
-                                            UK.
+                                            and a <span className="is-accent-white"> MSc </span>
+                                            degree in Computing and Information Systems.
                                         </p>
                                         <br />
                                         <p className="is-size-6 has-text-left is-body-text-2">
@@ -63,9 +57,8 @@ const Background = props => {
                                             reinvent the wheel but I utilize them in order to
                                             produce high-quality applications. For an instance,
                                             instead of building this site using plain Vanilla JS,
-                                            HTML & CSS from scratch (which I can if I want to), I
-                                            used NextJS for components and routing stuff, and Bulma
-                                            for class-based styling.
+                                            HTML & CSS from scratch, I used NextJS for components
+                                            and routing stuff, and Bulma for class-based styling.
                                         </p>
                                         <br />
                                         <p className="is-size-6 has-text-left is-body-text-2">
