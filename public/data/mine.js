@@ -14,10 +14,11 @@ export const projects = [
         title: 'Numov',
         details:
             'A browser extension that will pull all the latest and top movies from ' +
-            'an API everytime the user will open a new tab. Available only on Firefox.',
+            'an API everytime the user will open a new tab. Available only on Firefox. ' +
+            '(Currently updated to Version 2 and on review.)',
         image: '/image/projects/numov_screenshot.png',
         techs: ['Vanilla JS', 'ES6+', 'HTML5', 'CSS3', 'SASS', 'Webpack'],
-        link: 'https://addons.mozilla.org/en-US/firefox/addon/numov/',
+        link: 'https://numov.netlify.com/',
         github: 'https://github.com/MelodicCrypter/numov',
         priv: true,
     },
