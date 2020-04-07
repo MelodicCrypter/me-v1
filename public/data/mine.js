@@ -18,9 +18,9 @@ export const projects = [
             '(Currently updated to Version 2 and on review.)',
         image: '/image/projects/numov_screenshot.png',
         techs: ['Vanilla JS', 'ES6+', 'HTML5', 'CSS3', 'SASS', 'Webpack'],
-        link: 'https://numov.netlify.com/',
-        github: 'https://github.com/MelodicCrypter/numov',
-        priv: true,
+        link: 'https://addons.mozilla.org/en-US/firefox/addon/numov/',
+        github: 'https://github.com/MelodicCrypter/Numov-React',
+        priv: false,
     },
     {
         title: 'Origz',
