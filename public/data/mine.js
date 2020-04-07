@@ -15,7 +15,7 @@ export const projects = [
         details:
             'A browser extension that will pull all the latest and top movies from ' +
             'an API everytime the user will open a new tab. Available only on Firefox. ' +
-            '(Currently updated to Version 2 and on review.)',
+            '(Version 2 was approved - converted vanilla to React app)',
         image: '/image/projects/numov_screenshot.png',
         techs: ['Vanilla JS', 'ES6+', 'HTML5', 'CSS3', 'SASS', 'Webpack'],
         link: 'https://addons.mozilla.org/en-US/firefox/addon/numov/',
