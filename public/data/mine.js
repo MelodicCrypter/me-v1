@@ -15,9 +15,9 @@ export const projects = [
         details:
             'A browser extension that will pull all the latest and top movies from ' +
             'an API everytime the user will open a new tab. Available only on Firefox. ' +
-            '(Version 2 was approved - converted vanilla to React app)',
+            '(As of now, version 2.2.0 is being reviewed by Mozilla)',
         image: '/image/projects/numov_screenshot.png',
-        techs: ['Vanilla JS', 'ES6+', 'HTML5', 'CSS3', 'SASS', 'Webpack'],
+        techs: ['ReactJS', 'ES6+', 'Apollo Client', 'Localforage', 'GraphQL'],
         link: 'https://addons.mozilla.org/en-US/firefox/addon/numov/',
         github: 'https://github.com/MelodicCrypter/Numov-React',
         priv: false,
@@ -29,6 +29,7 @@ export const projects = [
             'for a fictitious company called "Origz". Created to showcase skills for latest technologies.',
         image: '/image/projects/origz_screenshot.png',
         techs: [
+            'ReactJS',
             'NextJS',
             'GraphQL',
             'Apollo',
