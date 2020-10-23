@@ -16,11 +16,20 @@ export const works = [
 // Projects
 export const projects = [
     {
+        title: 'GlobalSignin Live',
+        details:
+            'A web application that allows corporations or people around the world to host an online event. I helped in creating the admin section of the Live app.',
+        image: '/image/projects/gsi_screenshot.png',
+        techs: ['ReactJS', 'ES6+', 'Apollo Client', 'Redux', 'GraphQL'],
+        link: 'https://www.gevme.com/l/live/',
+        github: 'https://github.com/MelodicCrypter/',
+        priv: true,
+    },
+    {
         title: 'Numov',
         details:
             'A browser extension that will pull all the latest and top movies from ' +
-            'an API everytime the user will open a new tab. Available only on Firefox. ' +
-            '(As of now, version 2.2.0 is being reviewed by Mozilla)',
+            'an API everytime the user will open a new tab. Available only on Firefox.',
         image: '/image/projects/numov_screenshot.png',
         techs: ['ReactJS', 'ES6+', 'Apollo Client', 'Localforage', 'GraphQL'],
         link: 'https://addons.mozilla.org/en-US/firefox/addon/numov/',
@@ -204,8 +213,8 @@ export const skills = [
         languages: ['JavaScript (ES6+)', 'PHP7+', 'GraphQL', 'HMTL5', 'CSS3/SASS'],
         frameworks: [
             'React',
+            'React Native',
             'NextJS',
-            'CRA',
             'Node/Express',
             'WordPress',
             'WorkBox',

@@ -132,7 +132,7 @@ const HomePage = props => {
                                 <span className="field has-text-weight-medium">
                                     Full-stack JavaScript Developer
                                 </span>{' '}
-                                based in Philippines 🇵🇭.{' '}
+                                based in the Philippines 🇵🇭.{' '}
                                 <br
                                     className="is-hidden-mobile is-hidden-tablet-only
                                     is-hidden-desktop-only"

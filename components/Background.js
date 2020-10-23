@@ -35,9 +35,8 @@ const Background = props => {
                                     <div className="is-body-text">
                                         <p className="is-size-6 has-text-left is-body-text-2">
                                             Hello! I'm Hugh, a{' '}
-                                            <span className="is-accent-white">PHP-dev</span> turned
                                             <span className="is-accent-white">
-                                                &nbsp; Full-stack JavaScript Developer
+                                                Full-stack JavaScript Developer
                                             </span>{' '}
                                             based in the Philippines. I have a{' '}
                                             <span className="is-accent-white">BS</span> degree in IT
@@ -46,19 +45,16 @@ const Background = props => {
                                         </p>
                                         <br />
                                         <p className="is-size-6 has-text-left is-body-text-2">
-                                            Right now, I am working as a Freelance Web App
-                                            Developer.{' '}
-                                            <span className="is-accent-white">
-                                                Being a freelancer,
-                                            </span>{' '}
-                                            it has taught me lot of things especially in handling
-                                            clients and how to be responsible in managing time and
-                                            projects. Regarding technology and tools, I do not
-                                            reinvent the wheel but I utilize them in order to
-                                            produce high-quality applications. For an instance,
-                                            instead of building this site using plain Vanilla JS,
-                                            HTML & CSS from scratch, I used NextJS for components
-                                            and routing stuff, and Bulma for class-based styling.
+                                            I started coding seriously around 2015. Since then, I
+                                            have been a Freelance Web App Developer. I have also
+                                            worked in a company before that and even just this year
+                                            (2020), in the midst of pandemic I was able to work at
+                                            GlobalSignin, a company based in Singapore. I love to
+                                            create new things, through technology, especially things
+                                            that are really helpful to people. But, as much as I
+                                            can, I do not reinvent the wheel, I utilize existing
+                                            technology and tools in order to produce high-quality
+                                            applications.
                                         </p>
                                         <br />
                                         <p className="is-size-6 has-text-left is-body-text-2">

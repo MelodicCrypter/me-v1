@@ -111,8 +111,8 @@ const Resume = props => {
                                             <TiHomeOutline color="grey" size={12} /> Address
                                         </h6>
                                         <h6 className="subtitle is-r-7">
-                                            Zone 6, Bascon St., Graceville Homes, Brgy Dumlog,
-                                            Talisay Cebu, 6045, Philippines
+                                            Zone 6.., Download or Print the resume in order to view
+                                            the whole information
                                         </h6>
                                     </span>
 
@@ -122,7 +122,7 @@ const Resume = props => {
                                         <h6 className="title is-r-t-7">
                                             <TiPhoneOutline color="grey" size={13} /> Phone
                                         </h6>
-                                        <h6 className="subtitle is-r-7">+639559328520</h6>
+                                        <h6 className="subtitle is-r-7">Download to view</h6>
                                     </span>
 
                                     <br />
@@ -131,9 +131,7 @@ const Resume = props => {
                                         <h6 className="title is-r-t-7">
                                             <TiMail size={14} color="grey" /> Email
                                         </h6>
-                                        <h6 className="subtitle is-r-7">
-                                            hughcaluscusin@gmail.com
-                                        </h6>
+                                        <h6 className="subtitle is-r-7">Download to view</h6>
                                     </span>
 
                                     <br />
@@ -219,6 +217,28 @@ const Resume = props => {
                                         </h6>
                                     </span>
                                 </div>
+
+                                <br />
+                                <br />
+
+                                <div className="side-info">
+                                    <p className="is-size-4 has-text-weight-medium has-text-blue">
+                                        Interests
+                                    </p>
+
+                                    <br />
+
+                                    <span>
+                                        {/*<h6 className="title is-r-t-7">*/}
+                                        {/*    <TiHomeOutline color="grey" size={12} /> Address*/}
+                                        {/*</h6>*/}
+                                        <h6 className="subtitle is-r-7">
+                                            Songwriting, Music Prod., Table Tennis, Fisbee
+                                        </h6>
+                                    </span>
+
+                                    <br />
+                                </div>
                             </div>
 
                             <div className="column r-body">
@@ -242,16 +262,11 @@ const Resume = props => {
 
                                     <span>
                                         <p className="is-r-7">
-                                            Dedicated freelance programmer, shifted from being a PHP
-                                            developer to become a fullstack JavaScript developer.
-                                            More than 3 years of PHP experience and about 2 years of
-                                            fullstack JavaScript experience. Skilled in ES6+ and
-                                            Node and React (NextJS), eager to join your team to
-                                            provide both frontend and backend solutions to your
-                                            clients. Able to work in a team or as solo. In freelance
-                                            world, proper handling of clients and delivering their
-                                            products on time are the main keys, gradually learned
-                                            those through the years.
+                                            Passionate and dedicated Full-Stack JavaScript
+                                            developer. Skilled in ES6+, NodeJS and ReactJS (NextJS
+                                            and Gatsby), eager to join your team to provide both
+                                            frontend and backend solutions to your projects and
+                                            products.
                                         </p>
                                     </span>
                                 </div>
@@ -259,7 +274,7 @@ const Resume = props => {
                                 <br />
                                 <br />
 
-                                <div className="body-profession">
+                                <div className="body-profession employment">
                                     <p className="is-size-4 has-text-weight-medium has-text-blue">
                                         Employment History
                                     </p>
@@ -268,38 +283,117 @@ const Resume = props => {
 
                                     <span>
                                         <p className="has-text-weight-medium is-size-6 is-r-b-t1-7">
+                                            Full Stack Engineer, GlobalSignin, Pte Ltd
+                                        </p>
+                                        <h6 className="title is-r-b-t2-7">
+                                            May 2020 - Aug 2020 &nbsp; &nbsp;{' '}
+                                            <span className="is-7">
+                                                <TiLocationOutline color="grey" size={12} />{' '}
+                                                Singapore, (Homebased Philippines)
+                                            </span>
+                                        </h6>
+                                        <span className="employment-mini-list">
+                                            <h6 className="subtitle is-r-b-s-7">
+                                                - Helped in building the admin part of the whole
+                                                application
+                                            </h6>
+                                            <h6 className="subtitle is-r-b-s-7">
+                                                - Improved code base by implementing linting and
+                                                structure
+                                            </h6>
+                                            <h6 className="subtitle is-r-b-s-7">
+                                                - Created a complex Component inside the admin
+                                            </h6>
+                                            <h6 className="subtitle is-r-b-s-7">
+                                                - Implemented customized HandsOnTable-based
+                                                component
+                                            </h6>
+                                            <h6 className="subtitle is-r-b-s-7">
+                                                - Provided support during live online events
+                                            </h6>
+                                        </span>
+                                    </span>
+
+                                    <br />
+                                    <p className="custom-break-10"> </p>
+
+                                    <span>
+                                        <p className="has-text-weight-medium is-size-6 is-r-b-t1-7">
                                             Web/App Developer, Freelancing
                                         </p>
                                         <h6 className="title is-r-b-t2-7">
                                             Jan 2015 - Present &nbsp; &nbsp;{' '}
                                             <span className="is-7">
-                                                <TiLocationOutline color="grey" size={12} /> Cebu
-                                                Philippines
+                                                <TiLocationOutline color="grey" size={12} /> UK and
+                                                Cebu, Philipines
                                             </span>
                                         </h6>
-                                        <h6 className="subtitle is-r-b-s-7">
-                                            Build simple to custom web applications with
-                                            conventional workflows and technologies.
-                                        </h6>
+                                        <span className="employment-mini-list-title">
+                                            Project: WordLocker
+                                        </span>
+                                        <span className="employment-mini-list">
+                                            <h6 className="subtitle is-r-b-s-7">
+                                                - Created a PWA (Progressive Web App) from scratch
+                                            </h6>
+                                            <h6 className="subtitle is-r-b-s-7">
+                                                - Implemented using Firebase API for the
+                                                authentication and data
+                                            </h6>
+                                        </span>
+
+                                        <p className="custom-break-30"> </p>
+
+                                        <span className="employment-mini-list-title">
+                                            Project: LezDressUp
+                                        </span>
+                                        <span className="employment-mini-list">
+                                            <h6 className="subtitle is-r-b-s-7">
+                                                - Built a custom WordPress e-commerce site for a
+                                                fashion blogger from UK
+                                            </h6>
+                                            <h6 className="subtitle is-r-b-s-7">
+                                                - Customized front page with the client's
+                                                color-specific requests
+                                            </h6>
+                                            <h6 className="subtitle is-r-b-s-7">
+                                                - Integrated and configured WooCommerce for the
+                                                e-commerce aspect
+                                            </h6>
+                                            <h6 className="subtitle is-r-b-s-7">
+                                                - Created more than 10 pages with multiple custom
+                                                blog post types
+                                            </h6>
+                                        </span>
                                     </span>
 
                                     <br />
+                                    <p className="custom-break-10"> </p>
 
                                     <span>
                                         <p className="has-text-weight-medium is-size-6 is-r-b-t1-7">
                                             Web Developer, Rose Institute
                                         </p>
                                         <h6 className="title is-r-b-t2-7">
-                                            Dec 2012 - Dec 2013 &nbsp;{' '}
+                                            Dec 2012 - Dec 2013 &nbsp; &nbsp;{' '}
                                             <span className="is-7">
-                                                <TiLocationOutline color="grey" size={12} /> Cebu
+                                                <TiLocationOutline color="grey" size={12} /> Cebu,
                                                 Philippines
                                             </span>
                                         </h6>
-                                        <h6 className="subtitle is-r-b-s-7">
-                                            Designed and developed their business website from the
-                                            ground up.
-                                        </h6>
+                                        <span className="employment-mini-list">
+                                            <h6 className="subtitle is-r-b-s-7">
+                                                - Designed and developed their company website from
+                                                scratch
+                                            </h6>
+                                            <h6 className="subtitle is-r-b-s-7">
+                                                - Maintained the website with updates fro the
+                                                contents
+                                            </h6>
+                                            <h6 className="subtitle is-r-b-s-7">
+                                                - Set up email redirects to the manager when
+                                                customers send inquiries
+                                            </h6>
+                                        </span>
                                     </span>
                                 </div>
 
@@ -360,42 +454,6 @@ const Resume = props => {
                                     </span>
                                 </div>
 
-                                <br />
-                                <br />
-
-                                <div className="body-profession">
-                                    <p className="is-size-4 has-text-weight-medium has-text-blue">
-                                        References
-                                    </p>
-
-                                    <br />
-
-                                    <span>
-                                        <h6 className="subtitle is-r-b-s-7">
-                                            References avialable upon request.
-                                        </h6>
-                                    </span>
-                                </div>
-
-                                <br />
-                                <br />
-
-                                <div className="body-profession">
-                                    <p className="is-size-4 has-text-weight-medium has-text-blue">
-                                        Interests
-                                    </p>
-
-                                    <br />
-
-                                    <span>
-                                        <h6 className="subtitle is-r-b-s-7">
-                                            Songwriting, Music Production, Table Tennis, Frisbee,
-                                            Outdoors, Learning new stuff
-                                        </h6>
-                                    </span>
-                                </div>
-
-                                <br />
                                 <br />
                                 <br />
                                 <br />
