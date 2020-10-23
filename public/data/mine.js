@@ -1,6 +1,11 @@
 // Experiences timeline
 export const works = [
     {
+        company: 'GlobalSignin, Pte Ltd',
+        duration: 'May 2020 - Aug 2020',
+        role: 'Full Stack Engineer',
+    },
+    {
         company: 'Self-Employed (Freelancing)',
         duration: 'Jan 2015 - Present',
         role: 'Web/App Developer',
