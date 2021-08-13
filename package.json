@@ -17,7 +17,7 @@
     "bulma": "^0.8.0",
     "bulma-divider": "^0.2.0",
     "bulma-tooltip": "^3.0.2",
-    "next": "9.1.7",
+    "next": "11.1.0",
     "node-sass": "^4.13.0",
     "raf": "^3.4.1",
     "react": "16.12.0",
