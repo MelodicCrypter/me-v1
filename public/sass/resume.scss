@@ -3,6 +3,49 @@
   background-color: #f2f5fa;
 }
 
+#Loader {
+  position: absolute;
+  top: 260px;
+  width: 100%;
+  text-align: center;
+}
+
+#ResumeWrap {
+  position: relative;
+  width: 68%;
+  top: 28px;
+  margin: 0 auto 200px;
+
+  & .main-body {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 129.4118%;
+    padding-bottom: 48px;
+    margin-top: 1.6em;
+    margin-bottom: 0.9em;
+    overflow: hidden;
+    border-radius: 8px;
+    will-change: transform;
+
+    & iframe {
+      visibility: visible;
+    }
+
+    &.not-loaded iframe {
+      visibility: hidden;
+    }
+  }
+
+  & #ResumeOverlay {
+    position: absolute;
+    bottom: 0px;
+    height: 5%;
+    width: 100%;
+    background: #f2f5fa;
+  }
+}
+
 #resumeMenu {
   margin-top: 40px;
   padding-right: 0px;
@@ -27,13 +70,15 @@
   }
 
   & img {
+    width: 100%;
+    object-fit: cover;
     max-height: 2.7rem;
   }
 
   & .logo-bg {
     background: #222a3e;
-    width: 80px;
-    padding: 1em;
+    width: 84px;
+    padding: 12px;
     margin-top: -40px;
     box-shadow: 0px 2px 6px #948989;
   }
@@ -44,12 +89,10 @@
   border-radius: 6px;
   box-shadow: 0 20px 60px 0 rgba(186,200,227,.1),0 16px 36px 0 rgba(186,200,227,.3);
   width: 68%;
-  margin: 0 auto;
-  margin-bottom: 100px;
   min-height: 40%;
   max-height: 100%;
   height: auto;
-  margin-top: 40px;
+  margin: 40px auto 100px;
   align-items: initial;
 
   & .body-profession.employment {
@@ -121,19 +164,50 @@
   }
 }
 
+
+
+// Desktop only
+@media screen and (max-width: 1399px) {
+  // Resume Page
+  #resume > .hero-body {
+    width: 80% !important;
+  }
+  #ResumeWrap {
+    width: 88% !important;
+  }
+}
+
 // Tablet only
-@media screen and (min-width: 769px) and (max-width: 1023px) {
+@media screen and (max-width: 1199px) {
   // Resume Page
   #resume > .hero-body {
     width: 92% !important;
   }
+  #ResumeWrap {
+    width: 96% !important;
+    & #ResumeOverlay {
+      height: 6% !important;
+    }
+  }
 }
 
-// Desktop only
-@media screen and (min-width: 1024px) and (max-width: 1215px) {
-  // Resume Page
-  #resume > .hero-body {
-    width: 80% !important;
+@media screen and (max-width: 991px) {
+  #ResumeWrap {
+    margin: 0 auto 100px !important;
+    top: -12px !important;
+    & #ResumeOverlay {
+      height: 8% !important;
+    }
+  }
+}
+
+@media screen and (max-width: 512px) {
+  #ResumeWrap {
+    margin: 0 auto 0px !important;
+    top: -222px !important;
+    & #ResumeOverlay {
+      height: 10% !important;
+    }
   }
 }
 

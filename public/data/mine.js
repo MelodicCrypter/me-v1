@@ -1,13 +1,23 @@
 // Experiences timeline
 export const works = [
     {
+        company: 'PopBlocks',
+        duration: 'Feb 2022 - Apr 2022',
+        role: 'Full Stack Web-Blockchain Developer',
+    },
+    {
+        company: 'RetainLab',
+        duration: 'Nov 2020 - Dec 2021',
+        role: 'Full Stack Developer',
+    },
+    {
         company: 'GlobalSignin, Pte Ltd',
         duration: 'May 2020 - Aug 2020',
         role: 'Full Stack Engineer',
     },
     {
         company: 'Self-Employed (Freelancing)',
-        duration: 'Jan 2015 - Present',
+        duration: 'Jan 2015 - Aug 2019',
         role: 'Web/App Developer',
     },
     { company: 'Rose Institute', duration: 'Dec 2012 - Dec 2013', role: 'Web Developer' },
@@ -15,6 +25,36 @@ export const works = [
 
 // Projects
 export const projects = [
+    {
+        title: 'Sneaky Goblins NFT',
+        details:
+            'An NFT project on Ethereum network. Implemented the UI for minting, staking, and marketplace. Also, integrated contracts.',
+        image: '/image/projects/sneaky_screenshot.png',
+        techs: ['ReactJS', 'ES6+', 'Solidity', 'Web3', 'Metamask'],
+        link: 'https://goblinverse.sneakygoblins.co/mint',
+        github: 'https://github.com/MelodicCrypter/',
+        priv: true,
+    },
+    {
+        title: 'SeaFloor',
+        details:
+            'A browser extension that will allow users to check latest status of NFTs at OpenSea. It will show the rarity score and rank and its trading volume, and so much more',
+        image: '/image/projects/seafloor_screenshot.png',
+        techs: ['ReactJS', 'ES6+', 'Browser Extension', 'NodeJS', 'Puppeteer'],
+        link: 'https://chrome.google.com/webstore/detail/seafloor/hnfikimmejnoigenobgcjmcampcmcgpl',
+        github: 'https://github.com/MelodicCrypter/',
+        priv: true,
+    },
+    {
+        title: 'PolkaCombat',
+        details:
+            'A Blockchain project that lets users to bet to a custom Mugen game. The setup for this project is a bit complex.',
+        image: '/image/projects/polkacombat_screenshot.png',
+        techs: ['ReactJS', 'ES6+', 'NodeJS', 'Mugen', 'Web3', 'Metamask', 'Windows Server'],
+        link: 'https://www.polkacombat.com/',
+        github: 'https://github.com/MelodicCrypter/',
+        priv: true,
+    },
     {
         title: 'GlobalSignin Live',
         details:
@@ -35,28 +75,6 @@ export const projects = [
         link: 'https://addons.mozilla.org/en-US/firefox/addon/numov/',
         github: 'https://github.com/MelodicCrypter/Numov-React',
         priv: false,
-    },
-    {
-        title: 'Origz',
-        details:
-            'An e-Commerce web application powered by latest technologies. For now, it is ' +
-            'for a fictitious company called "Origz". Created to showcase skills for latest technologies.',
-        image: '/image/projects/origz_screenshot.png',
-        techs: [
-            'ReactJS',
-            'NextJS',
-            'GraphQL',
-            'Apollo',
-            'Prisma',
-            'GraphQL-Yoga',
-            'Node',
-            'Zeit',
-            'Heroku',
-            'ES6+',
-        ],
-        link: 'https://origz-frontend.now.sh/',
-        github: 'https://github.com/MelodicCrypter/Origz',
-        priv: true,
     },
     {
         title: 'Wordlocker',
@@ -84,17 +102,6 @@ export const projects = [
         priv: false,
     },
     {
-        title: 'Storya',
-        details:
-            'A web chat application that allow users to chat with each other in ' +
-            'real-time. This is possible through Socket IO.',
-        image: '/image/projects/storya_screenshot.png',
-        techs: ['Vanilla JS', 'Express', 'Node', 'Socket IO'],
-        link: 'https://storya.herokuapp.com/',
-        github: 'https://github.com/MelodicCrypter/Storya',
-        priv: false,
-    },
-    {
         title: 'Smoofly',
         details:
             'A WordPress web application for gathering (aggregating) search results' +
@@ -103,28 +110,6 @@ export const projects = [
         image: '/image/projects/smoofly_screenshot.png',
         techs: ['PHP7', 'WordPress', 'cPanel', 'Apache'],
         link: 'https://www.smoofly.com',
-        github: '',
-        priv: true,
-    },
-    {
-        title: 'Lez Dress Up',
-        details:
-            'A WordPress web application for a real client. The site is about fashion ' +
-            'and it also sells some merch like shirts and accessories, etc.',
-        image: '/image/projects/ldp_screenshot.png',
-        techs: ['PHP7', 'WordPress', 'cPanel', 'Apache'],
-        link: 'https://www.lezdressup.co.uk',
-        github: '',
-        priv: true,
-    },
-    {
-        title: 'Anne Marsan',
-        details:
-            'A personal portfolio site for Anne Marzan. A UK-based actress. Her ' +
-            'first domain is not available anymore, but I have a copy of her site.',
-        image: '/image/projects/am_screenshot.png',
-        techs: ['PHP7', 'Vanilla JS', 'HTML5', 'CSS3', 'Apache', 'cPanel'],
-        link: 'https://www.annemarzan.tk/',
         github: '',
         priv: true,
     },
@@ -210,30 +195,56 @@ export const otherProjects = [
 // Skills
 export const skills = [
     {
-        languages: ['JavaScript (ES6+)', 'PHP7+', 'GraphQL', 'HMTL5', 'CSS3/SASS'],
+        languages: [
+            'JavaScript (ES6+)',
+            'Solidity',
+            'GraphQL',
+            'TypeScript',
+            'PHP7+',
+            'HMTL5',
+            'CSS3/SASS',
+        ],
         frameworks: [
             'React',
-            'React Native',
             'NextJS',
-            'Node/Express',
+            'Express',
             'WordPress',
             'WorkBox',
             'Apollo',
-            'GraphQL-Yoga',
-            'Prisma',
             'Redux',
+            'Gatsby',
         ],
         tools: [
             'Git & GitHub',
             'Webpack',
             'CLI',
             'Ngrok',
+            'HardHat',
             'Postman',
             'ESLint/Prettier',
-            'LogRocket',
+            'Remix',
+            'Infura',
         ],
-        platforms: ['Heroku', 'AWS EC2', 'Zeit/Now', 'Netlify', 'cPanel/Apache'],
-        misc: ['Jest', 'Enzyme', 'MongoDB', 'MySQL', 'PostgreSQL', 'Firebase', 'Travis CI'],
+        platforms: [
+            'DigitalOcean',
+            'AWS EC2',
+            'Vercel',
+            'Netlify',
+            'Vultr',
+            'Heroku',
+            'cPanel/Apache',
+        ],
+        misc: [
+            'Docker',
+            'Nginx',
+            'Jest',
+            'Enzyme',
+            'MongoDB',
+            'MySQL',
+            'PostgreSQL',
+            'Firebase',
+            'Travis CI',
+        ],
         design: ['Photoshop', 'Adobe XD', 'Wireframing'],
     },
 ];

@@ -14,7 +14,9 @@ const HeroHeader = props => {
                 <div className="container">
                     <div className="navbar-brand">
                         <a className="navbar-item" href="/">
-                            <img src="/image/hc_logo.png" alt="Hugh Caluscusin Logo" />
+                            <div className="logo-wrap">
+                                <img src="/image/hc_logo-latest.png" alt="Hugh Caluscusin Logo" />
+                            </div>
                         </a>
                         <span
                             id="burger"

@@ -4,6 +4,6 @@
 My personal portfolio site. You can also create your site based on this one. Just read the license
 and maybe a little link-back would help.
 
-Deployed on Zeit.
+Deployed on Netlify
 
-[Under Your Hood app](https://www.hughcaluscusin.com)
+[Hugh Caluscusin](https://www.hughcaluscusin.com)
