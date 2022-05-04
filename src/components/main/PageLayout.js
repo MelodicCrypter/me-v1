@@ -1,9 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 
-import '../public/sass/main.scss';
-
-const Page = props => {
+function PageLayout({ children }) {
     return (
         <>
             <Head>
@@ -13,9 +11,9 @@ const Page = props => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
             </Head>
 
-            {props.children}
+            {children}
         </>
     );
-};
+}
 
-export default Page;
+export default PageLayout;

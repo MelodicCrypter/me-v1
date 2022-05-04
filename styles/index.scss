@@ -415,7 +415,7 @@ footer {
 // ---------- Below are Breakpoint styles -------------
 // Mobile
 @media screen and (max-width: 768px) {
-  &.hero.is-info {
+  .hero.is-info {
     background-attachment: initial !important;
   }
   #HeroLayout {
@@ -454,7 +454,7 @@ footer {
     width: auto;
   }
 
-  // Resume Page
+  // Resume PageLayout
   #resumeMenu {
     margin-top: -8px !important;
     padding-right: 20px !important;

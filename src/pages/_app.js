@@ -1,12 +1,27 @@
+import React, { useState, useEffect } from 'react';
 import App from 'next/app';
 
-import Page from '../../components/Page';
+// Components
+import PageLayout from '../components/main/PageLayout';
+
+// Styles
+import '../../styles/main.scss';
 
 function MyApp({ Component, pageProps }) {
+    const [showChild, setShowChild] = useState(false);
+
+    useEffect(() => {
+        setShowChild(true);
+    }, []);
+
+    if (!showChild) return null;
+
+    if (typeof window === 'undefined') return <span> </span>;
+
     return (
-        <Page>
+        <PageLayout>
             <Component {...pageProps} />
-        </Page>
+        </PageLayout>
     );
 }
 
@@ -15,7 +30,7 @@ function MyApp({ Component, pageProps }) {
 // perform automatic static optimization, causing every page in your app to
 // be server-side rendered.
 //
-MyApp.getInitialProps = async appContext => {
+MyApp.getInitialProps = async (appContext) => {
     // calls page's `getInitialProps` and fills `appProps.pageProps`
     const appProps = await App.getInitialProps(appContext);
 

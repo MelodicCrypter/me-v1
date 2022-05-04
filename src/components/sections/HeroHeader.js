@@ -2,8 +2,8 @@ import React from 'react';
 import { FaEnvelope, FaRocket } from 'react-icons/fa';
 import Link from 'next/link';
 
-const HeroHeader = props => {
-    const toggleMenu = e => {
+function HeroHeader() {
+    const toggleMenu = (e) => {
         document.querySelector('#burger').classList.toggle('is-active');
         document.querySelector('#navbarMenu').classList.toggle('is-active');
     };
@@ -27,9 +27,9 @@ const HeroHeader = props => {
                             data-target="navbarMenu"
                             onClick={toggleMenu}
                         >
-                            <span className="burger-span-1" aria-hidden="true"></span>
-                            <span className="burger-span-2" aria-hidden="true"></span>
-                            <span className="burger-span-3" aria-hidden="true"></span>
+                            <span className="burger-span-1" aria-hidden="true" />
+                            <span className="burger-span-2" aria-hidden="true" />
+                            <span className="burger-span-3" aria-hidden="true" />
                         </span>
                     </div>
                     <div id="navbarMenu" className="navbar-menu">
@@ -61,6 +61,6 @@ const HeroHeader = props => {
             </nav>
         </header>
     );
-};
+}
 
 export default HeroHeader;

@@ -38,7 +38,7 @@ export const projects = [
     {
         title: 'SeaFloor',
         details:
-            'A browser extension that will allow users to check latest status of NFTs at OpenSea. It will show the rarity score and rank and its trading volume, and so much more',
+            'A browser extension that will allow users to check latest status of NFTs at OpenSea. It will show the rarity score and rank and its trading volume, and so much more.',
         image: '/image/projects/seafloor_screenshot.png',
         techs: ['ReactJS', 'ES6+', 'Browser Extension', 'NodeJS', 'Puppeteer'],
         link: 'https://chrome.google.com/webstore/detail/seafloor/hnfikimmejnoigenobgcjmcampcmcgpl',
@@ -69,7 +69,7 @@ export const projects = [
         title: 'Numov',
         details:
             'A browser extension that will pull all the latest and top movies from ' +
-            'an API everytime the user will open a new tab. Available only on Firefox.',
+            'an API every time the user will open a new tab. Available only on Firefox.',
         image: '/image/projects/numov_screenshot.png',
         techs: ['ReactJS', 'ES6+', 'Apollo Client', 'Localforage', 'GraphQL'],
         link: 'https://addons.mozilla.org/en-US/firefox/addon/numov/',

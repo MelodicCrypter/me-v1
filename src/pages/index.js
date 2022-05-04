@@ -10,14 +10,17 @@ import { FaEnvelope, FaLinkedin, FaGithub, FaMedium, FaNpm } from 'react-icons/f
 import { MdKeyboardArrowDown } from 'react-icons/md';
 import { AiOutlineVerticalAlignTop } from 'react-icons/ai';
 
-import DefaultMeta from '../../components/DefaultMeta';
-import HeroLayout from '../../components/HeroLayout';
-import Background from '../../components/Background';
-import Skills from '../../components/Skills';
-import Experience from '../../components/Experience';
-import Projects from '../../components/Projects';
-import OtherProjects from '../../components/OtherProjects';
-import AppFooter from '../../components/AppFooter';
+// Components
+import DefaultMeta from '../components/sections/DefaultMeta';
+import HeroLayout from '../components/sections/HeroLayout';
+import Background from '../components/sections/Background';
+import Skills from '../components/sections/Skills';
+import Experience from '../components/sections/Experience';
+import Projects from '../components/sections/Projects';
+import OtherProjects from '../components/sections/OtherProjects';
+import AppFooter from '../components/sections/AppFooter';
+
+// Data
 import { works, projects, otherProjects, skills } from '../../public/data/mine';
 
 // Bounce Animation
@@ -29,15 +32,16 @@ const Bounce = styled.div`
 const smSize = 16;
 
 // <HomePage /> Component
-const HomePage = props => {
+function HomePage(props) {
+    // States
     // State if to show auto scroll-to-top or not
     const [range, setRange] = useState('');
     // For clicking the arrow down/top
     const backgroundRef = useRef();
     const heroRef = useRef();
 
-    // Hanlde clicks
-    const handleArrowClick = target => {
+    // Handlers
+    const handleArrowClick = (target) => {
         if (target === 'arrow-down') {
             scrollToComponent(backgroundRef.current, {
                 offset: 0,
@@ -142,7 +146,7 @@ const HomePage = props => {
                                 technologies.
                             </h2>
 
-                            <div id="arrow-down" onClick={e => handleArrowClick('arrow-down')}>
+                            <div id="arrow-down" onClick={(e) => handleArrowClick('arrow-down')}>
                                 <Bounce>
                                     <MdKeyboardArrowDown size={50} />
                                 </Bounce>
@@ -177,7 +181,7 @@ const HomePage = props => {
             <Fade delay={360}>
                 <Link href="/resume">
                     <a>
-                        <div className="is-divider" data-content=" VIEW RESUME 🏹"></div>
+                        <div className="is-divider" data-content=" VIEW RESUME 🏹" />
                     </a>
                 </Link>
             </Fade>
@@ -191,18 +195,18 @@ const HomePage = props => {
             </section>
 
             {range === 'inside' ? (
-                <div id="scrollToTop" onClick={e => handleArrowClick('arrow-top')}>
+                <div id="scrollToTop" onClick={(e) => handleArrowClick('arrow-top')}>
                     <span>
                         <AiOutlineVerticalAlignTop size={20} />
                     </span>
                 </div>
             ) : (
-                <div></div>
+                <div />
             )}
 
             <AppFooter />
         </>
     );
-};
+}
 
 export default HomePage;

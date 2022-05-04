@@ -5,7 +5,7 @@ import { FaEnvelope, FaLinkedin, FaGithub, FaMedium, FaNpm } from 'react-icons/f
 // Social Media icons size
 const smSize = 16;
 
-const AppFooter = props => {
+const AppFooter = (props) => {
     return (
         <footer className="footer">
             <div className="footer-divider"> </div>
@@ -19,12 +19,12 @@ const AppFooter = props => {
                             <div className="level-item">
                                 <p className="is-6 has-text-weight-medium">
                                     Crafted with <FaHeart color="red" /> by{' '}
-                                    <a href="/">Hugh Calucusin</a> &nbsp;
+                                    <a href="/Users/hughcaluscusin/TeamCaluscusin Dropbox/Hugh Caluscusin/My Mac (hughs-mbp)/Documents/MC Web Development/MC Dev React/NextJS/me-v1/me-v1/public">
+                                        Hugh Calucusin
+                                    </a>{' '}
+                                    &nbsp;
                                     <span className="has-text-weight-bold">
-                                        {new Date()
-                                            .getFullYear()
-                                            .toString()
-                                            .trim()}
+                                        {new Date().getFullYear().toString().trim()}
                                     </span>
                                 </p>
                             </div>
@@ -42,7 +42,7 @@ const AppFooter = props => {
                                         <FaEnvelope size={smSize} />
                                     </a>
                                     <a
-                                        href="https://www.linkedin.com/in/hughcaluscusin/"
+                                        href="src/components/sections/AppFooter"
                                         rel="noopener noreferrer"
                                         target="_blank"
                                     >
