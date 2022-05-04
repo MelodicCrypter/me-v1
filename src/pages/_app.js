@@ -7,7 +7,7 @@ import PageLayout from '../components/main/PageLayout';
 // Styles
 import '../../styles/main.scss';
 
-function MyApp({ Component, pageProps }) {
+const MyApp = ({ Component, pageProps }) => {
     const [showChild, setShowChild] = useState(false);
 
     useEffect(() => {
@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }) {
             <Component {...pageProps} />
         </PageLayout>
     );
-}
+};
 
 // Only uncomment this method if you have blocking data requirements for
 // every single page in your application. This disables the ability to

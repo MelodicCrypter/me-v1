@@ -17,13 +17,13 @@ const Projects = ({ delay, data }) => {
     const isMobileOrTablet = isMobile || isTablet;
     const isDesktopUp = isDesktop || isWidescreen || isFullHD;
 
-    const toggleModal = e => {
+    const toggleModal = (e) => {
         e.preventDefault();
         document.querySelector('.modal').classList.toggle('is-active');
         document.querySelector('html').classList.toggle('is-clipped');
     };
 
-    const closeModal = e => {
+    const closeModal = (e) => {
         document.querySelector('.modal').classList.remove('is-active');
         document.querySelector('html').classList.remove('is-clipped');
     };
@@ -33,7 +33,7 @@ const Projects = ({ delay, data }) => {
             <section id="ProjectsComponent" className="section">
                 <div className="container">
                     <div className="columns is-centered">
-                        <div className="column"> </div>
+                        <div className="column" />
 
                         <div
                             className={`column ${
@@ -48,11 +48,11 @@ const Projects = ({ delay, data }) => {
                                 </div>
 
                                 {/* Map all projects here */}
-                                {data.map(proj => {
+                                {data.map((proj) => {
                                     return (
                                         <div key={proj.title} className="columns">
                                             <div className="column is-narrow">
-                                                <div className="headings"></div>
+                                                <div className="headings" />
                                             </div>
 
                                             <div className="column">
@@ -66,7 +66,7 @@ const Projects = ({ delay, data }) => {
                                                             priv={proj.priv}
                                                             github={proj.github}
                                                             visibility="mt"
-                                                            toggler={e => toggleModal(e)}
+                                                            toggler={(e) => toggleModal(e)}
                                                         />
 
                                                         <br className="is-hidden-desktop" />
@@ -74,7 +74,7 @@ const Projects = ({ delay, data }) => {
                                                         <img src={proj.image} alt="" />
 
                                                         <div className="buttons">
-                                                            {proj.techs.map(techName => {
+                                                            {proj.techs.map((techName) => {
                                                                 return (
                                                                     <span
                                                                         key={techName}
@@ -94,7 +94,7 @@ const Projects = ({ delay, data }) => {
                                                             priv={proj.priv}
                                                             github={proj.github}
                                                             visibility="dwf"
-                                                            toggler={e => toggleModal(e)}
+                                                            toggler={(e) => toggleModal(e)}
                                                         />
 
                                                         <br className="is-hidden-touch" />
@@ -111,18 +111,18 @@ const Projects = ({ delay, data }) => {
                             </Fade>
                         </div>
 
-                        <div className="column"> </div>
+                        <div className="column" />
                     </div>
                 </div>
             </section>
 
             <div className="modal">
-                <div className="modal-background" onClick={closeModal}></div>
+                <div className="modal-background" onClick={closeModal} />
                 <div className="modal-content">
                     <div className="modal-content">
                         <div className="box">
                             <article className="media">
-                                <div className="media-left"></div>
+                                <div className="media-left" />
                                 <div className="media-content">
                                     <div className="content">
                                         <p className="has-text-grey-dark">
@@ -140,11 +140,7 @@ const Projects = ({ delay, data }) => {
                         </div>
                     </div>
                 </div>
-                <button
-                    className="modal-close is-large"
-                    aria-label="close"
-                    onClick={closeModal}
-                ></button>
+                <button className="modal-close is-large" aria-label="close" onClick={closeModal} />
             </div>
         </>
     );

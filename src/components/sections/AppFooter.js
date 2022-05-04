@@ -1,6 +1,5 @@
 import React from 'react';
-import { FaHeart } from 'react-icons/fa';
-import { FaEnvelope, FaLinkedin, FaGithub, FaMedium, FaNpm } from 'react-icons/fa';
+import { FaHeart, FaEnvelope, FaLinkedin, FaGithub, FaMedium, FaNpm } from 'react-icons/fa';
 
 // Social Media icons size
 const smSize = 16;

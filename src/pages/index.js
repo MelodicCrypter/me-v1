@@ -32,7 +32,7 @@ const Bounce = styled.div`
 const smSize = 16;
 
 // <HomePage /> Component
-function HomePage(props) {
+const HomePage = (props) => {
     // States
     // State if to show auto scroll-to-top or not
     const [range, setRange] = useState('');
@@ -207,6 +207,6 @@ function HomePage(props) {
             <AppFooter />
         </>
     );
-}
+};
 
 export default HomePage;

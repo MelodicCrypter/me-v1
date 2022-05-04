@@ -2,7 +2,7 @@ import React from 'react';
 import Fade from 'react-reveal/Fade';
 import { useMediaQuery } from 'react-responsive';
 
-function Background({ delay }) {
+const Background = ({ delay }) => {
     const isFullHD = useMediaQuery({ minWidth: 1408 });
     const isWidescreen = useMediaQuery({ minWidth: 1216, maxWidth: 1407 });
     const isDesktop = useMediaQuery({ minWidth: 1024, maxWidth: 1215 });
@@ -78,6 +78,6 @@ function Background({ delay }) {
             </div>
         </section>
     );
-}
+};
 
 export default Background;

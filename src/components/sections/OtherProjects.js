@@ -32,11 +32,11 @@ const OtherProjects = ({ delay, data }) => {
                             </div>
 
                             {/* Map all other projects here */}
-                            {data.map(proj => {
+                            {data.map((proj) => {
                                 return (
                                     <div key={proj.title} className="columns">
                                         <div className="column is-narrow">
-                                            <div className="headings"></div>
+                                            <div className="headings" />
                                         </div>
 
                                         <div className="column bg">
@@ -56,7 +56,7 @@ const OtherProjects = ({ delay, data }) => {
                                                     </p>
 
                                                     <div className="buttons">
-                                                        {proj.techs.map(techName => {
+                                                        {proj.techs.map((techName) => {
                                                             return (
                                                                 <span
                                                                     key={techName}

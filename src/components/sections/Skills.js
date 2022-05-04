@@ -39,8 +39,8 @@ const Skills = ({ delay, data }) => {
                                             </p>
                                             <div className="content has-text-left">
                                                 <ul className="is-7 is-body-text-2">
-                                                    {data.map(skills => {
-                                                        return skills.languages.map(item => {
+                                                    {data.map((skills) => {
+                                                        return skills.languages.map((item) => {
                                                             return <li key={item}>{item}</li>;
                                                         });
                                                     })}
@@ -53,8 +53,8 @@ const Skills = ({ delay, data }) => {
                                             </p>
                                             <div className="content has-text-left ">
                                                 <ul className="is-7 is-body-text-2">
-                                                    {data.map(skills => {
-                                                        return skills.frameworks.map(item => {
+                                                    {data.map((skills) => {
+                                                        return skills.frameworks.map((item) => {
                                                             return <li key={item}>{item}</li>;
                                                         });
                                                     })}
@@ -67,8 +67,8 @@ const Skills = ({ delay, data }) => {
                                             </p>
                                             <div className="content has-text-left ">
                                                 <ul className="is-7 is-body-text-2">
-                                                    {data.map(skills => {
-                                                        return skills.tools.map(item => {
+                                                    {data.map((skills) => {
+                                                        return skills.tools.map((item) => {
                                                             return <li key={item}>{item}</li>;
                                                         });
                                                     })}
@@ -81,8 +81,8 @@ const Skills = ({ delay, data }) => {
                                             </p>
                                             <div className="content has-text-left ">
                                                 <ul className="is-7 is-body-text-2">
-                                                    {data.map(skills => {
-                                                        return skills.platforms.map(item => {
+                                                    {data.map((skills) => {
+                                                        return skills.platforms.map((item) => {
                                                             return <li key={item}>{item}</li>;
                                                         });
                                                     })}
@@ -95,8 +95,8 @@ const Skills = ({ delay, data }) => {
                                             </p>
                                             <div className="content has-text-left ">
                                                 <ul className="is-7 is-body-text-2">
-                                                    {data.map(skills => {
-                                                        return skills.misc.map(item => {
+                                                    {data.map((skills) => {
+                                                        return skills.misc.map((item) => {
                                                             return <li key={item}>{item}</li>;
                                                         });
                                                     })}
@@ -109,8 +109,8 @@ const Skills = ({ delay, data }) => {
                                             </p>
                                             <div className="content has-text-left ">
                                                 <ul className="is-7 is-body-text-2">
-                                                    {data.map(skills => {
-                                                        return skills.design.map(item => {
+                                                    {data.map((skills) => {
+                                                        return skills.design.map((item) => {
                                                             return <li key={item}>{item}</li>;
                                                         });
                                                     })}

@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 
-function PageLayout({ children }) {
+const PageLayout = ({ children }) => {
     return (
         <>
             <Head>
@@ -14,6 +14,6 @@ function PageLayout({ children }) {
             {children}
         </>
     );
-}
+};
 
 export default PageLayout;

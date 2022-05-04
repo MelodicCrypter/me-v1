@@ -30,11 +30,11 @@ const Experience = ({ delay, data }) => {
                             </div>
 
                             {/* Map all past employment or experiences here */}
-                            {data.map(work => {
+                            {data.map((work) => {
                                 return (
                                     <div key={work.company} className="columns">
                                         <div className="column is-narrow">
-                                            <div className="headings"></div>
+                                            <div className="headings" />
                                         </div>
                                         <div className="column">
                                             <div className="columns is-mobile">
@@ -58,9 +58,7 @@ const Experience = ({ delay, data }) => {
                                                     </p>
                                                 </div>
 
-                                                {!isMobileOrTablet && (
-                                                    <div className="column"></div>
-                                                )}
+                                                {!isMobileOrTablet && <div className="column" />}
 
                                                 <div className="column is-half-mobile is-half-tablet">
                                                     <p

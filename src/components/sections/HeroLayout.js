@@ -2,7 +2,7 @@ import React from 'react';
 
 import HeroHeader from './HeroHeader';
 
-function HeroLayout({ children }) {
+const HeroLayout = ({ children }) => {
     return (
         <section id="HeroLayout" className="hero is-info is-fullheight">
             <HeroHeader />
@@ -13,6 +13,6 @@ function HeroLayout({ children }) {
             {/*  Hero Footer  */}
         </section>
     );
-}
+};
 
 export default HeroLayout;

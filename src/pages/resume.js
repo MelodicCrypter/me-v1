@@ -8,7 +8,7 @@ import { InfinitySpin } from 'react-loader-spinner';
 // Components
 import DefaultMeta from '../components/sections/DefaultMeta';
 
-function Resume() {
+const Resume = () => {
     const [frameLoaded, setFrameLoaded] = useState(false);
 
     const onIframeLoadHandler = (e) => {
@@ -84,6 +84,7 @@ function Resume() {
                     )}
                     <div className={`main-body ${!frameLoaded ? 'not-loaded' : ''}`}>
                         <iframe
+                            title="Hugh Caluscusin - Fullstack JavaScript Developer"
                             loading="lazy"
                             onLoad={(e) => onIframeLoadHandler(e)}
                             style={{
@@ -106,6 +107,6 @@ function Resume() {
             </section>
         </>
     );
-}
+};
 
 export default Resume;

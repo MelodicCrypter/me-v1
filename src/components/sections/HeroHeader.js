@@ -2,7 +2,7 @@ import React from 'react';
 import { FaEnvelope, FaRocket } from 'react-icons/fa';
 import Link from 'next/link';
 
-function HeroHeader() {
+const HeroHeader = () => {
     const toggleMenu = (e) => {
         document.querySelector('#burger').classList.toggle('is-active');
         document.querySelector('#navbarMenu').classList.toggle('is-active');
@@ -61,6 +61,6 @@ function HeroHeader() {
             </nav>
         </header>
     );
-}
+};
 
 export default HeroHeader;
